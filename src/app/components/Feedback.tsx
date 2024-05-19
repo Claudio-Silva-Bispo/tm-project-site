@@ -3,230 +3,74 @@
 export default function Feedback(){
     return(
 
-        <section className="my-8 bg-primeira">
-            
-            <div className="container flex flex-col justify-center items-center mx-auto mb-10 md:p-8 md:px-10">
-                <h1 className="p-4 text-4xl font-semibold leading-none text-center text-white uppercase ">What our customers are saying about us</h1>
-            </div>
+        <div className="flex justify-center gap-20">
 
-            <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10 bg-white">
-                
-                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
-                    
-                    <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
-                        <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
-                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                            </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="absolute right-0 w-8 h-8 dark:text-violet-600">
-                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-                            </svg>
-                        </p>
-                    </div>
+                <div className="flex flex-col gap-10 justify-center items-center w-md">
 
-                    <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
-                        <img src="https://source.unsplash.com/50x50/?portrait?1" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
-                        <p className="text-xl font-semibold leading-tight">Distinctio Animi</p>
-                        
-                        <div className="rating">
-                                            
-                            <input value="10" name="rate" id="star10" type="radio"/>
-                            <label htmlFor="star10" title="text"></label>
+                    <div className="flex flex-col gap-10">
 
-                            <input value="9" name="rate" id="star9" type="radio"/>
-                            <label htmlFor="star9" title="text"></label>
+                        <h1 className="font-bold text-4xl uppercase text-center">Seu feedback é valioso!</h1>
 
-                            <input value="8" name="rate" id="star8" type="radio" />
-                            <label htmlFor="star8" title="text"></label>
+                        <p className="font-manrope text-xl">Compartilhe sua opinião sobre nossos serviços preenchendo nossa pesquisa de satisfação. Agradecemos por sua colaboração!</p>
 
-                            <input value="7" name="rate" id="star7" type="radio"/>
-                            <label htmlFor="star7" title="text"></label>
-
-                            <input value="6" name="rate" id="star6" type="radio"/>
-                            <label htmlFor="star6" title="text"></label>
-    
-                        </div>
+                        <h2 className="font-manrope text-xl">Você pode deixar seu comentário aqui na nossa página ou utilizando o Google, clicando aqui...</h2>
 
                     </div>
-                    
-                </div>
 
-                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
-                    
-                    <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
-                        <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
-                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                            </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="absolute right-0 w-8 h-8 dark:text-violet-600">
-                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-                            </svg>
-                        </p>
-                    </div>
+                    <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start font-manrope">
+                            
+                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white ">Home</a>
 
-                    <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
-                        <img src="https://source.unsplash.com/50x50/?portrait?2" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
-                        <p className="text-xl font-semibold leading-tight">Distinctio Animi</p>
-                        
-                        <div className="rating">
-                                            
-                            <input value="10" name="rate" id="star10" type="radio"/>
-                            <label htmlFor="star10" title="text"></label>
-
-                            <input value="9" name="rate" id="star9" type="radio"/>
-                            <label htmlFor="star9" title="text"></label>
-
-                            <input value="8" name="rate" id="star8" type="radio" />
-                            <label htmlFor="star8" title="text"></label>
-
-                            <input value="7" name="rate" id="star7" type="radio"/>
-                            <label htmlFor="star7" title="text"></label>
-
-                            <input value="6" name="rate" id="star6" type="radio"/>
-                            <label htmlFor="star6" title="text"></label>
-    
-                        </div>
-
+                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded text-white bg-terceira">Google</a>
                     </div>
 
                 </div>
 
-                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
+                <div className="flex flex-col max-w-xl p-8 shadow-sm rounded-xl lg:p-12">
                     
-                    <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
-                        <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
-                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                            </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="absolute right-0 w-8 h-8 dark:text-violet-600">
-                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-                            </svg>
-                        </p>
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
-                        
-                        <img src="https://source.unsplash.com/50x50/?portrait?3" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
-                        <p className="text-xl font-semibold leading-tight">Distinctio Animi</p>
-                        
-                        <div className="rating">
-                                            
-                            <input value="10" name="rate" id="star10" type="radio"/>
-                            <label htmlFor="star10" title="text"></label>
-
-                            <input value="9" name="rate" id="star9" type="radio"/>
-                            <label htmlFor="star9" title="text"></label>
-
-                            <input value="8" name="rate" id="star8" type="radio" />
-                            <label htmlFor="star8" title="text"></label>
-
-                            <input value="7" name="rate" id="star7" type="radio"/>
-                            <label htmlFor="star7" title="text"></label>
-
-                            <input value="6" name="rate" id="star6" type="radio"/>
-                            <label htmlFor="star6" title="text"></label>
-    
+                    <div className="flex flex-col items-center w-full">
+                        <h2 className="text-3xl font-semibold text-center">Your opinion matters!</h2>
+                        <div className="flex flex-col items-center py-6 space-y-3">
+                            <span className="text-center">How was your experience?</span>
+                            <div className="flex space-x-3">
+                                <button type="button" title="Rate 1 stars" aria-label="Rate 1 stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-10 h-10 dark:text-yellow-700">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" title="Rate 2 stars" aria-label="Rate 2 stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-10 h-10 dark:text-yellow-700">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" title="Rate 3 stars" aria-label="Rate 3 stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-10 h-10 dark:text-yellow-700">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" title="Rate 4 stars" aria-label="Rate 4 stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-10 h-10 dark:text-yellow-700">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" title="Rate 5 stars" aria-label="Rate 5 stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-10 h-10 dark:text-gray-400">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-
-                    </div>
-
-                </div>
-
-                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
-                    
-                    <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
-                        <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
-                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                            </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="absolute right-0 w-8 h-8 dark:text-violet-600">
-                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-                            </svg>
-                        </p>
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
-                        
-                        <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
-                        <p className="text-xl font-semibold leading-tight">Distinctio Animi</p>
-                        
-                        <div className="rating">
-                                            
-                            <input value="10" name="rate" id="star10" type="radio"/>
-                            <label htmlFor="star10" title="text"></label>
-
-                            <input value="9" name="rate" id="star9" type="radio"/>
-                            <label htmlFor="star9" title="text"></label>
-
-                            <input value="8" name="rate" id="star8" type="radio" />
-                            <label htmlFor="star8" title="text"></label>
-
-                            <input value="7" name="rate" id="star7" type="radio"/>
-                            <label htmlFor="star7" title="text"></label>
-
-                            <input value="6" name="rate" id="star6" type="radio"/>
-                            <label htmlFor="star6" title="text"></label>
-    
+                        <div className="flex flex-col w-full">
+                            <textarea rows={3} placeholder="Message..." className="p-4 rounded-md resize-none dark:text-gray-800 dark:bg-gray-50"></textarea>
+                            <button type="button" className="py-4 my-8 font-semibold rounded-md dark:text-gray-50 dark:bg-violet-600">Leave feedback</button>
                         </div>
-
                     </div>
 
-                </div>
-
-                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
-                    
-                    <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
-                        <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
-                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                            </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="absolute right-0 w-8 h-8 dark:text-violet-600">
-                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-                            </svg>
-                        </p>
+                    <div className="flex items-center justify-center">
+                        <a rel="noopener noreferrer" href="#" className="text-sm dark:text-gray-600">Maybe later</a>
                     </div>
-
-                    <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
-                        <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
-                        <p className="text-xl font-semibold leading-tight">Distinctio Animi</p>
-                        
-                        <div className="rating">
-                                            
-                            <input value="10" name="rate" id="star10" type="radio"/>
-                            <label htmlFor="star10" title="text"></label>
-
-                            <input value="9" name="rate" id="star9" type="radio"/>
-                            <label htmlFor="star9" title="text"></label>
-
-                            <input value="8" name="rate" id="star8" type="radio" />
-                            <label htmlFor="star8" title="text"></label>
-
-                            <input value="7" name="rate" id="star7" type="radio"/>
-                            <label htmlFor="star7" title="text"></label>
-
-                            <input value="6" name="rate" id="star6" type="radio"/>
-                            <label htmlFor="star6" title="text"></label>
-    
-                        </div>
-
-                    </div>
-
-                    
                 </div>
 
             </div>
-
-    </section>
-
     );
 }

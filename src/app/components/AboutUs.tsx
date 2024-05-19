@@ -3,14 +3,16 @@
 export default function AboutUs(){
     return(
 
-        <section className="bg-terceira">
+        <section className="bg-gray-100">
             
             <div className="container mx-auto flex flex-col p-6">
 
-                <h2 className="py-4 text-3xl font-bold text-center text-white">Why Choose Us</h2>
+                <h2 className="py-4 text-6xl font-bold text-center uppercase md:mt-20">Why Choose Us</h2>
 
                 <div className="divide-y dark:divide-gray-300">
+                    
                     <div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                        
                         <div className="flex items-center justify-center lg:col-span-1 col-span-full">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-16 h-16">
                                 <path d="M472,16H168a24,24,0,0,0-24,24V344a24,24,0,0,0,24,24H472a24,24,0,0,0,24-24V40A24,24,0,0,0,472,16Zm-8,320H176V48H464Z"></path>
@@ -20,9 +22,12 @@ export default function AboutUs(){
                         </div>
 
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xs tracking-wider uppercase dark:text-violet-600">Soluções</span>
+                            
+                            <span className="text-xs tracking-wider uppercase">Soluções</span>
+                            
                             <span className="text-xl font-bold md:text-2xl">Necessidade de soluções de limpeza doméstica para criar um ambiente mais saudável e acolhedor</span>
-                            <span className="mt-4 dark:text-gray-700">Precisamos de soluções de limpeza doméstica para criar um ambiente mais saudável e acolhedor. Nossa empresa americana se dedica a oferecer serviços de limpeza excepcionais, garantindo que sua casa esteja sempre limpa e organizada. Através de um rigoroso padrão de qualidade, promovemos a tranquilidade e o bem-estar de nossos clientes, transformando suas casas em refúgios perfeitos para relaxar e aproveitar o tempo livre.</span>
+                            
+                            <span className="mt-4 font-manrope">Precisamos de soluções de limpeza doméstica para criar um ambiente mais saudável e acolhedor. Nossa empresa americana se dedica a oferecer serviços de limpeza excepcionais, garantindo que sua casa esteja sempre limpa e organizada. Através de um rigoroso padrão de qualidade, promovemos a tranquilidade e o bem-estar de nossos clientes, transformando suas casas em refúgios perfeitos para relaxar e aproveitar o tempo livre.</span>
                         </div>
 
                     </div>
@@ -35,9 +40,9 @@ export default function AboutUs(){
                             </svg>
                         </div>
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xs tracking-wider uppercase dark:text-violet-600">Excelência</span>
+                            <span className="text-xs tracking-wider uppercase">Excelência</span>
                             <span className="text-xl font-bold md:text-2xl">Promoção da curiosidade e felicidade através da excelência</span>
-                            <span className="mt-4 dark:text-gray-700">Acreditamos que a curiosidade e a busca pela excelência são fundamentais para a satisfação de nossos clientes. Nossa equipe de profissionais qualificados é treinada para prestar serviços de limpeza detalhados, atendendo às suas necessidades específicas e superando suas expectativas. Cada tarefa é realizada com cuidado e atenção, proporcionando uma experiência de limpeza que promove felicidade e contentamento.</span>
+                            <span className="mt-4 font-manrope">Acreditamos que a curiosidade e a busca pela excelência são fundamentais para a satisfação de nossos clientes. Nossa equipe de profissionais qualificados é treinada para prestar serviços de limpeza detalhados, atendendo às suas necessidades específicas e superando suas expectativas. Cada tarefa é realizada com cuidado e atenção, proporcionando uma experiência de limpeza que promove felicidade e contentamento.</span>
                         </div>
                     </div>
 
@@ -49,9 +54,12 @@ export default function AboutUs(){
                             </svg>
                         </div>
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xs tracking-wider uppercase dark:text-violet-600">Impressão</span>
+                            
+                            <span className="text-xs tracking-wider uppercase">Impressão</span>
+                            
                             <span className="text-xl font-bold md:text-2xl">A importância de impressões prósperas e convicções fortes</span>
-                            <span className="mt-4 dark:bg-gray-100 dark:text-gray-700">Valorizamos a importância de impressões positivas e a confiança que nossos clientes depositam em nós. Trabalhamos com convicção e dedicação, assegurando que cada visita resulte em um ambiente limpo e agradável. Nossos serviços são projetados para causar uma impressão duradoura, reforçando a confiança e a satisfação de nossos clientes.</span>
+
+                            <span className="mt-4 font-manrope">Valorizamos a importância de impressões positivas e a confiança que nossos clientes depositam em nós. Trabalhamos com convicção e dedicação, assegurando que cada visita resulte em um ambiente limpo e agradável. Nossos serviços são projetados para causar uma impressão duradoura, reforçando a confiança e a satisfação de nossos clientes.</span>
                         </div>
                     </div>
 
@@ -65,9 +73,12 @@ export default function AboutUs(){
                         </div>
 
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xs tracking-wider uppercase dark:text-violet-600">Qualidade</span>
+                            
+                            <span className="text-xs tracking-wider uppercase">Qualidade</span>
+                            
                             <span className="text-xl font-bold md:text-2xl">Sua satisfação é nossa maior recompensa</span>
-                            <span className="mt-4 dark:text-gray-700">A satisfação dos nossos clientes é nossa prioridade. Esforçamo-nos para proporcionar uma sensação de contentamento duradoura, garantindo que cada casa esteja sempre impecável. Nosso compromisso com a excelência e a atenção aos detalhes fazem com que nossos serviços de limpeza sejam a escolha ideal para quem busca um ambiente doméstico limpo e organizado.</span>
+                            
+                            <span className="mt-4 font-manrope">A satisfação dos nossos clientes é nossa prioridade. Esforçamo-nos para proporcionar uma sensação de contentamento duradoura, garantindo que cada casa esteja sempre impecável. Nosso compromisso com a excelência e a atenção aos detalhes fazem com que nossos serviços de limpeza sejam a escolha ideal para quem busca um ambiente doméstico limpo e organizado.</span>
                         </div>
                     </div>
                 </div>

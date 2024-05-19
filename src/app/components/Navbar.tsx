@@ -12,7 +12,7 @@ export default function Navbar(){
                 <img src="/assets/Navbar/logo-empresa-tratado.png" alt="Logo da empresa" />
 
                 
-                <ul className="items-stretch hidden space-x-3 md:flex">
+                <ul className="items-stretch hidden space-x-3 md:flex font-manrope">
 
                     <li className="flex">
                         <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">About</a>
@@ -28,6 +28,10 @@ export default function Navbar(){
 
                     <li className="flex">
                         <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Quote</a>
+                    </li>
+
+                    <li className="flex">
+                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Feedback</a>
                     </li>
 
                     <li className="flex">

@@ -3,23 +3,23 @@ import VideoComponent from "./VideoComponent";
 export default function About(){
     return(
             
-            <section className="bg-sexta">
+            <section className="bg-sexta bg-gray-100">
                 
-                <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+                <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl md:mt-20">
 
                     <div>
 
-                        <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl ">Frase de efeito aqui</h2>
-                        <p className="max-w-3xl mx-auto mt-4 text-xl text-center ">Complemento da frase</p>
+                        <h2 className="text-3xl font-bold tracking-tight text-center sm:text-6xl uppercase">Frase de efeito aqui</h2>
+                        <p className="max-w-3xl mx-auto mt-4 text-xl text-center font-manrope">Complemento da frase</p>
                     </div>
 
                     <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 
                         <div>
 
-                            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl ">Sobre nós</h3>
+                            <h3 className="text-2xl font-bold tracking-tight sm:text-6xl ">Sobre nós</h3>
                             
-                            <p className="mt-3 text-lg ">Pegar o texto que já existe no site e quebrar ele em partes.</p>
+                            <p className="mt-3 text-lg font-manrope">Pegar o texto que já existe no site e quebrar ele em partes.</p>
 
                             <div className="mt-12 space-y-12">
 
@@ -33,8 +33,8 @@ export default function About(){
                                     </div>
 
                                     <div className="ml-4">
-                                        <h4 className="text-lg font-medium leading-6 ">Per ei quaeque sensibus</h4>
-                                        <p className="mt-2 ">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p>
+                                        <h4 className="text-lg font-manrope leading-6 ">Per ei quaeque sensibus</h4>
+                                        <p className="mt-2 font-manrope">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p>
                                     </div>
 
                                 </div>
@@ -49,8 +49,8 @@ export default function About(){
                                     </div>
 
                                     <div className="ml-4">
-                                        <h4 className="text-lg font-medium leading-6 ">Cu imperdiet posidonium sed</h4>
-                                        <p className="mt-2 ">Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.</p>
+                                        <h4 className="text-lg font-manrope leading-6 ">Cu imperdiet posidonium sed</h4>
+                                        <p className="mt-2 font-manrope">Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.</p>
                                     </div>
 
                                 </div>
@@ -69,8 +69,8 @@ export default function About(){
 
                                     <div className="ml-4">
 
-                                        <h4 className="text-lg font-medium leading-6 ">Nulla omittam sadipscing mel ne</h4>
-                                        <p className="mt-2 ">At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.</p>
+                                        <h4 className="text-lg font-manrope leading-6 ">Nulla omittam sadipscing mel ne</h4>
+                                        <p className="mt-2 font-manrope">At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.</p>
 
                                     </div>
 
@@ -92,9 +92,9 @@ export default function About(){
 
                             <div className="lg:col-start-2">
 
-                                <h3 className="text-2xl font-bold tracking-tight sm:text-3xl ">Sobre nosso atendimento</h3>
+                                <h3 className="text-2xl font-bold tracking-tight sm:text-6xl ">Sobre nosso atendimento</h3>
 
-                                <p className="mt-3 text-lg ">Falar aqui sobre horário de atendimento, dias, como agendar, se temos alguma preferência.</p>
+                                <p className="mt-3 text-lg font-manrope">Falar aqui sobre horário de atendimento, dias, como agendar, se temos alguma preferência.</p>
                                 
                                 <div className="mt-12 space-y-12">
 
@@ -108,8 +108,8 @@ export default function About(){
                                         </div>
 
                                         <div className="ml-4">
-                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-900">Cibo augue offendit has ad</h4>
-                                            <p className="mt-2 dark:text-gray-600">An per velit appellantur, ut utinam minimum nominavi sit, odio nostro habemus ne nec. Ne sonet regione contentiones est.</p>
+                                            <h4 className="text-lg font-manrope leading-6 dark:text-gray-900">Cibo augue offendit has ad</h4>
+                                            <p className="mt-2 font-manrope">An per velit appellantur, ut utinam minimum nominavi sit, odio nostro habemus ne nec. Ne sonet regione contentiones est.</p>
                                         </div>
 
                                     </div>
@@ -127,8 +127,8 @@ export default function About(){
 
                                         <div className="ml-4">
 
-                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-900">At eum ferri luptatum lobortis</h4>
-                                            <p className="mt-2 dark:text-gray-600">Te per quidam maiorum ocurreret, etiam delicatissimi usu ad. Ne has quod periculis. Te sit primis iisque efficiantur.</p>
+                                            <h4 className="text-lg font-manrope leading-6">At eum ferri luptatum lobortis</h4>
+                                            <p className="mt-2 font-manrope">Te per quidam maiorum ocurreret, etiam delicatissimi usu ad. Ne has quod periculis. Te sit primis iisque efficiantur.</p>
 
                                         </div>
                                     </div>
@@ -146,8 +146,8 @@ export default function About(){
 
                                         <div className="ml-4">
 
-                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-900">Dicunt verterem evertitur eu sea</h4>
-                                            <p className="mt-2 dark:text-gray-600">Audire principes rationibus eam an, autem nominavi luptatum per te. Sumo fabulas vim eu, sonet saperet eleifend ut vix.</p>
+                                            <h4 className="text-lg font-manrope leading-6 ">Dicunt verterem evertitur eu sea</h4>
+                                            <p className="mt-2 font-manrope">Audire principes rationibus eam an, autem nominavi luptatum per te. Sumo fabulas vim eu, sonet saperet eleifend ut vix.</p>
 
                                         </div>
 
