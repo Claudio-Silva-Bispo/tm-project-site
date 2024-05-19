@@ -13,18 +13,18 @@ export default function SocialMedia(){
 
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 
-                    <h1 className="text-4xl font-bold leading-none sm:text-6xl text-white">Redes Sociais
+                    <h1 className="text-4xl font-bold leading-none sm:text-6xl text-white">Social Media
                     
                     </h1>
 
-                    <p className="mt-6 mb-8 text-lg sm:mb-12 text-white font-manrope">Falar sobre os serviços que foram executados e que podem aprender ou pesquisar melhor acessando as redes.
+                    <p className="mt-6 mb-8 text-lg sm:mb-12 text-white font-manrope">Explore our social media channels to dive deeper into our services, watch videos, and read customer feedback. Follow us for a closer look at what we offer!
                     </p>
                     
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start font-manrope">
                         
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white ">Instagram</a>
+                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-segunda text-white hover:bg-setima hover:text-black">Instagram</a>
 
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded text-white">Facebook</a>
+                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded text-white hover:bg-white hover:text-black">Facebook</a>
                     </div>
 
                 </div>

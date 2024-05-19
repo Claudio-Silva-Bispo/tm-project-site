@@ -13,12 +13,12 @@ export default function Quote(){
                         
                         <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-violet-600">
 
-                            <h3 className="text-4xl font-semibold text-white uppercase mb-5">Solicite um Orçamento para Nossos Serviços de Limpeza</h3>
+                            <h3 className="text-4xl font-semibold text-white uppercase mb-5">Request a Quote for Our Cleaning Services</h3>
 
-                            <span className="text-sm font-bold tracking-wider uppercase dark:text-gray-600">Simples e rápido</span>
+                            <span className="text-sm font-bold tracking-wider uppercase dark:text-gray-600">Simple and Quick</span>
                         </div>
 
-                        <a href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white w-40 hover:bg-violet-600">Cote agora</a>
+                        <a href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white w-40 hover:bg-violet-600">Get a Quote Now</a>
 
                     </div>
 
@@ -28,28 +28,30 @@ export default function Quote(){
                             
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                 
-                                <h3 className="text-xl font-semibold tracking-wide">Inicie o preenchimento do formulário</h3>
-                                <time className="text-xs tracking-wide uppercase dark:text-gray-600">Primeiro passo</time>
-                                <p className="mt-3">Preencha o formulário para obter um orçamento detalhado e personalizado para suas necessidades de limpeza. Nossa equipe está pronta para fornecer soluções eficazes e adaptadas ao seu espaço, garantindo ambientes limpos e saudáveis.</p>
+                                <h3 className="text-xl font-semibold tracking-wide">Start filling out the form</h3>
+
+                                <time className="text-xs tracking-wide uppercase dark:text-gray-600">Step One</time>
+
+                                <p className="mt-3">Fill out the form to get a detailed and personalized quote for your cleaning needs. Our team is ready to provide effective and tailored solutions for your space, ensuring clean and healthy environments.</p>
                                 
                             </div>
 
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                 
-                                <h3 className="text-xl font-semibold tracking-wide">Defina o tipo de serviço</h3>
+                                <h3 className="text-xl font-semibold tracking-wide">Define the type of service</h3>
 
-                                <time className="text-xs tracking-wide uppercase dark:text-gray-600">Segundo passo</time>
+                                <time className="text-xs tracking-wide uppercase dark:text-gray-600">Step Two</time>
 
-                                <p className="mt-3">Cada serviço é realizado com atenção aos detalhes e com produtos de alta qualidade, incluindo opções veganas e sustentáveis. Garantimos que seu espaço estará impecável e pronto para uso. Solicite seu orçamento agora e descubra como podemos transformar seu ambiente!</p>
+                                <p className="mt-3">Each service is performed with attention to detail and high-quality products, including vegan and sustainable options. We guarantee that your space will be impeccable and ready for use. Request your quote now and discover how we can transform your environment.!</p>
 
-                                <h4>Defina os serviços entre:</h4>
+                                <h4>Define the services as:</h4>
 
                                 <p>
-                                Limpeza Regular, 
-                                Profunda, 
-                                Limpeza de Mudança, 
-                                Pós-Construção, 
-                                Para Eventos Especiais
+                                    Regular Cleaning,
+                                    Deep Cleaning,
+                                    Move-Out Cleaning,
+                                    Post-Construction Cleaning,
+                                    Special Event Cleaning
                                 </p>
                                     
 
@@ -57,11 +59,11 @@ export default function Quote(){
 
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                 
-                                <h3 className="text-xl font-semibold tracking-wide">Esolha o dia e horário</h3>
+                                <h3 className="text-xl font-semibold tracking-wide">Choose the day and time</h3>
                                 
-                                <time className="text-xs tracking-wide uppercase dark:text-gray-600">Terceiro passo</time>
+                                <time className="text-xs tracking-wide uppercase dark:text-gray-600">Step Three</time>
                                 
-                                <p className="mt-3">Cada serviço é realizado com atenção aos detalhes e com produtos de alta qualidade, incluindo opções veganas e sustentáveis. Garantimos que seu espaço estará impecável e pronto para uso. Solicite seu orçamento agora, com preferência e definição de dia e horário, e descubra como podemos transformar seu ambiente!</p>
+                                <p className="mt-3">Each service is performed with attention to detail and high-quality products, including vegan and sustainable options. We guarantee that your space will be impeccable and ready for use. Request your quote now, with preference and definition of day and time, and discover how we can transform your environment!</p>
                             </div>
 
                         

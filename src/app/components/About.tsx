@@ -9,8 +9,8 @@ export default function About(){
 
                     <div>
 
-                        <h2 className="text-3xl font-bold tracking-tight text-center sm:text-6xl uppercase">Frase de efeito aqui</h2>
-                        <p className="max-w-3xl mx-auto mt-4 text-xl text-center font-manrope">Complemento da frase</p>
+                        <h2 className="text-3xl font-bold tracking-tight text-center sm:text-6xl uppercase">Details of Our Company</h2>
+                        <p className="max-w-3xl mx-auto mt-4 text-xl text-center font-manrope">Cleanliness that embraces comfort, making every space a cozy retreat.</p>
                     </div>
 
                     <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">

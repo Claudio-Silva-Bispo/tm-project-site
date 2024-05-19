@@ -23,11 +23,11 @@ export default function AboutUs(){
 
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                             
-                            <span className="text-xs tracking-wider uppercase">Soluções</span>
+                            <span className="text-xs tracking-wider uppercase">Solutions</span>
                             
-                            <span className="text-xl font-bold md:text-2xl">Necessidade de soluções de limpeza doméstica para criar um ambiente mais saudável e acolhedor</span>
+                            <span className="text-xl font-bold md:text-2xl">The need for household cleaning solutions to create a healthier and more welcoming environment.</span>
                             
-                            <span className="mt-4 font-manrope">Precisamos de soluções de limpeza doméstica para criar um ambiente mais saudável e acolhedor. Nossa empresa americana se dedica a oferecer serviços de limpeza excepcionais, garantindo que sua casa esteja sempre limpa e organizada. Através de um rigoroso padrão de qualidade, promovemos a tranquilidade e o bem-estar de nossos clientes, transformando suas casas em refúgios perfeitos para relaxar e aproveitar o tempo livre.</span>
+                            <span className="mt-4 font-manrope">We need household cleaning solutions to create a healthier and more welcoming environment. Our American company is dedicated to providing exceptional cleaning services, ensuring that your home is always clean and organized. Through a rigorous standard of quality, we promote peace of mind and well-being for our customers, transforming their homes into perfect retreats to relax and enjoy their leisure time.</span>
                         </div>
 
                     </div>
@@ -40,9 +40,12 @@ export default function AboutUs(){
                             </svg>
                         </div>
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xs tracking-wider uppercase">Excelência</span>
-                            <span className="text-xl font-bold md:text-2xl">Promoção da curiosidade e felicidade através da excelência</span>
-                            <span className="mt-4 font-manrope">Acreditamos que a curiosidade e a busca pela excelência são fundamentais para a satisfação de nossos clientes. Nossa equipe de profissionais qualificados é treinada para prestar serviços de limpeza detalhados, atendendo às suas necessidades específicas e superando suas expectativas. Cada tarefa é realizada com cuidado e atenção, proporcionando uma experiência de limpeza que promove felicidade e contentamento.</span>
+                            
+                            <span className="text-xs tracking-wider uppercase">Excellence</span>
+                            
+                            <span className="text-xl font-bold md:text-2xl">Promoting curiosity and happiness through excellence.</span>
+                            
+                            <span className="mt-4 font-manrope">We believe that curiosity and the pursuit of excellence are fundamental to our customers' satisfaction. Our team of qualified professionals is trained to provide detailed cleaning services, meeting your specific needs and exceeding your expectations. Each task is performed with care and attention, providing a cleaning experience that promotes happiness and contentment.</span>
                         </div>
                     </div>
 
@@ -55,11 +58,11 @@ export default function AboutUs(){
                         </div>
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                             
-                            <span className="text-xs tracking-wider uppercase">Impressão</span>
+                            <span className="text-xs tracking-wider uppercase">Impression</span>
                             
-                            <span className="text-xl font-bold md:text-2xl">A importância de impressões prósperas e convicções fortes</span>
+                            <span className="text-xl font-bold md:text-2xl">The importance of prosperous impressions and strong convictions.</span>
 
-                            <span className="mt-4 font-manrope">Valorizamos a importância de impressões positivas e a confiança que nossos clientes depositam em nós. Trabalhamos com convicção e dedicação, assegurando que cada visita resulte em um ambiente limpo e agradável. Nossos serviços são projetados para causar uma impressão duradoura, reforçando a confiança e a satisfação de nossos clientes.</span>
+                            <span className="mt-4 font-manrope">We value the importance of positive impressions and the trust our clients place in us. We work with conviction and dedication, ensuring that each visit results in a clean and pleasant environment. Our services are designed to create a lasting impression, reinforcing the trust and satisfaction of our clients.</span>
                         </div>
                     </div>
 
@@ -74,11 +77,11 @@ export default function AboutUs(){
 
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
                             
-                            <span className="text-xs tracking-wider uppercase">Qualidade</span>
+                            <span className="text-xs tracking-wider uppercase">Quality</span>
                             
-                            <span className="text-xl font-bold md:text-2xl">Sua satisfação é nossa maior recompensa</span>
+                            <span className="text-xl font-bold md:text-2xl">Your satisfaction is our greatest reward.</span>
                             
-                            <span className="mt-4 font-manrope">A satisfação dos nossos clientes é nossa prioridade. Esforçamo-nos para proporcionar uma sensação de contentamento duradoura, garantindo que cada casa esteja sempre impecável. Nosso compromisso com a excelência e a atenção aos detalhes fazem com que nossos serviços de limpeza sejam a escolha ideal para quem busca um ambiente doméstico limpo e organizado.</span>
+                            <span className="mt-4 font-manrope">Our clients' satisfaction is our priority. We strive to provide a lasting sense of contentment, ensuring that every home is always impeccable. Our commitment to excellence and attention to detail make our cleaning services the ideal choice for those seeking a clean and organized home environment.</span>
                         </div>
                     </div>
                 </div>

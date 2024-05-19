@@ -8,7 +8,7 @@ export default function Services(){
             <div className="container mx-auto space-y-12 md:mt-20">
 
                 <div className="font-bold text-6xl uppercase">
-                    <h1>Sobre os serviços</h1>
+                    <h1>About Our Services</h1>
                 </div>
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
@@ -19,11 +19,11 @@ export default function Services(){
                         
                         <span className="text-xs uppercase">Regular Cleaning</span>
                         
-                        <h3 className="text-3xl font-bold">Transforme seu espaço com nossa limpeza regular: um ambiente mais limpo e saudável, todos os dias!</h3>
+                        <h3 className="text-3xl font-bold">Transform your space with our regular cleaning: a cleaner and healthier environment, every day!</h3>
                         
-                        <p className="my-6">Limpeza regular é essencial para manter um ambiente limpo e saudável. Ao limpar regularmente, removemos sujeira, poeira e germes que podem se acumular ao longo do tempo.</p>
+                        <p className="my-6">Regular cleaning is essential for maintaining a clean and healthy environment. By cleaning regularly, we remove dirt, dust, and germs that can accumulate over time.</p>
 
-                        <button type="button" className="self-start">Cote agora</button>
+                        <button type="button" className="self-start">Get a quote now!</button>
 
                     </div>
 
@@ -36,9 +36,12 @@ export default function Services(){
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
                         <span className="text-xs uppercase">Deep Cleaning</span>
-                        <h3 className="text-3xl font-bold">Deixe cada canto impecável com nossa limpeza profunda: a perfeição em cada detalhe!</h3>
-                        <p className="my-6 dark:text-gray-600">A limpeza profunda é uma tarefa importante para manter as coisas organizadas e arrumadas. Significa dar uma esfregada completa em tudo para garantir que esteja super limpo.</p>
-                        <button type="button" className="self-start">Cote agora</button>
+                        
+                        <h3 className="text-3xl font-bold">Make every corner spotless with our deep cleaning: perfection in every detail!</h3>
+                        
+                        <p className="my-6 dark:text-gray-600">Deep cleaning is an important task to keep things organized and tidy. It means giving everything a thorough scrub to make sure it’s super clean.</p>
+                        
+                        <button type="button" className="self-start">Get a quote now!</button>
 
                     </div>
                 </div>
@@ -50,9 +53,12 @@ export default function Services(){
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
                         <span className="text-xs uppercase">Move-Out Cleaning</span>
-                        <h3 className="text-3xl font-bold">Saia sem preocupações com nossa limpeza de mudança: deixe tudo impecável para os próximos moradores!</h3>
-                        <p className="my-6">A limpeza de mudança é um passo essencial ao deixar uma casa. Envolve uma limpeza completa para garantir que o lugar esteja impecável para os próximos ocupantes.</p>
-                        <button type="button" className="self-start">Cote agora</button>
+                        
+                        <h3 className="text-3xl font-bold">Move out worry-free with our move-out cleaning: leave everything spotless for the next occupants!</h3>
+                        
+                        <p className="my-6">Move-out cleaning is an essential step when leaving a home. It involves thorough cleaning to ensure the place is spotless for the next occupants.</p>
+
+                        <button type="button" className="self-start">Get a quote now!</button>
 
                     </div>
                 </div>
@@ -65,11 +71,11 @@ export default function Services(){
                         
                         <span className="text-xs uppercase">Post-Construction Cleaning</span>
                         
-                        <h3 className="text-3xl font-bold">Revele a beleza do seu novo espaço com nossa limpeza pós-construção: o toque final para um brilho impecável!</h3>
+                        <h3 className="text-3xl font-bold">Unveil the beauty of your new space with our post-construction cleaning: the finishing touch for a flawless shine!</h3>
                         
-                        <p className="my-6 dark:text-gray-600">Depois que o trabalho de construção está concluído, é hora da limpeza! A limpeza pós-construção é essencial para fazer o lugar brilhar. Poeira, detritos e materiais restantes precisam ser removidos para revelar a beleza do espaço recém-construído ou renovado.</p>
+                        <p className="my-6 dark:text-gray-600">After the construction work is done, it's time for the cleanup! Post-construction cleaning is essential to make the place shine. Dust, debris, and leftover materials need to be removed to reveal the beauty of the newly built or renovated space.</p>
 
-                        <button type="button" className="self-start">Cote agora</button>
+                        <button type="button" className="self-start">Get a quote now!</button>
 
                     </div>
                 </div>
@@ -82,11 +88,11 @@ export default function Services(){
                         
                         <span className="text-xs uppercase">Special Event Cleaning</span>
                         
-                        <h3 className="text-3xl font-bold">Deixe a limpeza com a gente e aproveite seu evento especial: brilho e perfeição do início ao fim!</h3>
+                        <h3 className="text-3xl font-bold">Leave the cleaning to us and enjoy your special event: shine and perfection from start to finish!</h3>
                         
-                        <p className="my-6">Eventos especiais trazem alegria e emoção, mas também trazem bagunça. É aí que entra a limpeza de eventos especiais. Seja um casamento, uma festa ou uma reunião corporativa, nossa equipe garante que tudo brilhe e reluza antes, durante e depois da ocasião.</p>
+                        <p className="my-6">Special events bring joy and excitement, but they also bring mess. That's where special event cleaning steps in. Whether it's a wedding, a party, or a corporate gathering, our team ensures everything sparkles and shines before, during, and after the occasion.</p>
 
-                        <button type="button" className="self-start">Cote agora</button>
+                        <button type="button" className="self-start">Get a quote now!</button>
 
                     </div>
                 </div>
@@ -99,11 +105,11 @@ export default function Services(){
                         
                         <span className="text-xs uppercase">Vegan Home Solutions</span>
                         
-                        <h3 className="text-3xl font-bold">Chuveiro limpo e brilhante com soluções veganas: gentileza e eficiência para o seu lar!</h3>
+                        <h3 className="text-3xl font-bold">Clean and shining shower with vegan solutions: kindness and efficiency for your home!</h3>
                         
-                        <p className="my-6 dark:text-gray-600">Manter seu chuveiro limpo não precisa significar usar produtos químicos agressivos. Soluções veganas para o lar oferecem maneiras suaves, mas eficazes, de manter o chuveiro brilhando.</p>
+                        <p className="my-6 dark:text-gray-600">Keeping your shower clean doesn't have to mean using harsh chemicals. Vegan home solutions offer gentle yet effective ways to keep your shower shining.</p>
 
-                        <button type="button" className="self-start">Cote agora</button>
+                        <button type="button" className="self-start">Get a quote now!</button>
 
                     </div>
                 </div>

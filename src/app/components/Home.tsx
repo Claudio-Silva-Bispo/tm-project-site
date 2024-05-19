@@ -11,13 +11,13 @@ export default function HomePage(){
                     
                     <h1 className="text-4xl font-orelega uppercase leading-none sm:text-6xl xl:max-w-3xl text-white">WELCOME TO Oliver bussiness cleaning</h1>
                     
-                    <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl font-manrope">Deixe sua casa brilhar com nossos serviços de limpeza profissional. Oferecemos soluções completas e confiáveis, adaptadas às suas necessidades.</p>
+                    <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl font-manrope">Let your home shine bright with our professional cleaning services. We offer thorough and reliable solutions tailored to your needs.</p>
                     
                     <div className="flex flex-wrap justify-center">
                         
-                        <button type="button" className="px-8 py-3 m-2 text-lg border rounded hover:bg-terceira hover:text-white font-manrope">Orçamento</button>
+                        <button type="button" className="px-8 py-3 m-2 text-lg border rounded hover:bg-terceira hover:text-white font-manrope text-white">Quote</button>
                         
-                        <button type="button" className="px-8 py-3 m-2 text-lg border rounded hover:bg-terceira hover:text-white font-manrope">Contato</button>
+                        <button type="button" className="px-8 py-3 m-2 text-lg border rounded hover:bg-terceira hover:text-white font-manrope text-white">Contact</button>
 
                     </div>
 
