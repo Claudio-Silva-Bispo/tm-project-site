@@ -47,7 +47,7 @@ export default function FormFeedback(){
       
     return(
 
-        <div className="bg-cinzadois min-h-full md:flex md:justify-center" id="FormFeedback">
+        <div className="bg-cinzadois min-h-full md:flex md:justify-center pb-10" id="FormFeedback">
 
             <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-10 p-6 md:p-10">
 
