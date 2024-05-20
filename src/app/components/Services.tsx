@@ -13,7 +13,7 @@ export default function Services(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                     
-                    <img src="https://source.unsplash.com/640x480/?1" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Services/Imagem1.jpg" alt="Imagem sobre nossos serviços" className="h-80 dark:bg-gray-500 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
@@ -31,7 +31,7 @@ export default function Services(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                     
-                    <img src="https://source.unsplash.com/640x480/?2" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Services/Imagem2.jpg" alt="Imagem sobre nossos serviços" className="h-80 dark:bg-gray-500 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
@@ -48,7 +48,7 @@ export default function Services(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                     
-                    <img src="https://source.unsplash.com/640x480/?3" alt="" className="h-80 aspect-video" />
+                    <img src="/assets/Services/Imagem3.jpg" alt="Imagem sobre nossos serviços" className="h-80 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
@@ -65,7 +65,7 @@ export default function Services(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                     
-                    <img src="https://source.unsplash.com/640x480/?2" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Services/Imagem4.jpg" alt="Imagem sobre nossos serviços" className="h-80 dark:bg-gray-500 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
@@ -82,7 +82,7 @@ export default function Services(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                     
-                    <img src="https://source.unsplash.com/640x480/?3" alt="" className="h-80 aspect-video" />
+                    <img src="/assets/Services/Imagem5.jpg" alt="Imagem sobre nossos serviços" className="h-80 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
@@ -99,7 +99,7 @@ export default function Services(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                     
-                    <img src="https://source.unsplash.com/640x480/?2" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Services/Imagem6.jpg" alt="Imagem sobre nossos serviços" className="h-80 dark:bg-gray-500 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
