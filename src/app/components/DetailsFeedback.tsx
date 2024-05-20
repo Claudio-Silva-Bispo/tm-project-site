@@ -39,7 +39,7 @@ export default function DetailsFeedback() {
 
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-center font-manrope">
                             
-                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white hover:bg-terceira hover:text-white">Rate Now</a>
+                            <a rel="noopener noreferrer" href="./Feedback" className="px-8 py-3 text-lg font-semibold rounded bg-white hover:bg-terceira hover:text-white">Rate Now</a>
 
                             <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded text-white bg-terceira hover:bg-white hover:text-black">Use Google</a>
             </div>

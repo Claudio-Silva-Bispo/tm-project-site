@@ -3,7 +3,7 @@
 export default function AboutUs(){
     return(
 
-        <section className="bg-gray-100">
+        <section className="bg-gray-100" id="AboutUs">
             
             <div className="container mx-auto flex flex-col p-6">
 

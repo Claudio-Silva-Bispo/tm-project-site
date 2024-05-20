@@ -3,7 +3,7 @@
 export default function Quote(){
     return(
 
-        <section className="bg-cinzacinco">
+        <section className="bg-cinzacinco" id="Quote">
             
             <div className="container max-w-5xl px-4 py-12 mx-auto">
                 

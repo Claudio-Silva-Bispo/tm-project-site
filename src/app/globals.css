@@ -119,7 +119,7 @@ body {
 .rating:not(:checked) > label {
   float: right;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 40px;
   color: #e58e09;
 }
 

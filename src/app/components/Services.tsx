@@ -3,7 +3,7 @@
 export default function Services(){
     return(
 
-        <section className="p-4 lg:p-8">
+        <section className="p-4 lg:p-8" id="Services">
 
             <div className="container mx-auto space-y-12 md:mt-20">
 

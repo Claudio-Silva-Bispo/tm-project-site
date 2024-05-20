@@ -3,7 +3,7 @@ import VideoComponent from "./VideoComponent";
 export default function About(){
     return(
             
-            <section className="bg-sexta bg-gray-100">
+            <section className="bg-sexta bg-gray-100" id="About">
                 
                 <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl md:mt-20">
 

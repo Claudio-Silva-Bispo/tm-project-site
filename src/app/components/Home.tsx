@@ -3,7 +3,7 @@
 export default function HomePage(){
     return(
 
-        <section>
+        <section id="Home">
             
             <div className="bg-primeira">
                 

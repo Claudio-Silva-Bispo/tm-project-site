@@ -1,5 +1,5 @@
 
-import imagem from '../../../public/assets/Navbar/logo-empresa-tratado.png'
+import Link from "next/link";
 
 export default function Navbar(){
     
@@ -9,33 +9,33 @@ export default function Navbar(){
             
             <div className="container flex justify-between h-16 mx-auto">
 
-                <img src="/assets/Navbar/logo-empresa-tratado.png" alt="Logo da empresa" />
+                <img src="/assets/Navbar/logo-empresa-tratado.png" alt="Logo da empresa"/>               
 
                 
                 <ul className="items-stretch hidden space-x-3 md:flex font-manrope">
 
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">About</a>
+                        <a rel="noopener noreferrer" href="#About" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">About</a>
                     </li>
 
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Services</a>
+                        <a rel="noopener noreferrer" href="#Services" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Services</a>
                     </li>
 
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">Contact</a>
+                        <a rel="noopener noreferrer" href="#Contact" className="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">Contact</a>
                     </li>
 
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Quote</a>
+                        <a rel="noopener noreferrer" href="#Quote" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Quote</a>
                     </li>
 
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Feedback</a>
+                        <a rel="noopener noreferrer" href="/Feedback" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Feedback</a>
                     </li>
 
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Testimonials</a>
+                        <a rel="noopener noreferrer" href="#Testimonials" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Testimonials</a>
                     </li>
 
                 </ul>
