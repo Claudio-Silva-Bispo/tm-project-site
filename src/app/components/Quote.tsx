@@ -3,7 +3,7 @@
 export default function Quote(){
     return(
 
-        <section className="bg-terceira">
+        <section className="bg-cinzacinco">
             
             <div className="container max-w-5xl px-4 py-12 mx-auto">
                 
@@ -11,14 +11,14 @@ export default function Quote(){
                     
                     <div className="col-span-12 sm:col-span-3">
                         
-                        <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-violet-600">
+                        <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-terceira">
 
                             <h3 className="text-4xl font-semibold text-white uppercase mb-5">Request a Quote for Our Cleaning Services</h3>
 
                             <span className="text-sm font-bold tracking-wider uppercase dark:text-gray-600">Simple and Quick</span>
                         </div>
 
-                        <a href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white w-40 hover:bg-violet-600">Get a Quote Now</a>
+                        <a href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white w-40 hover:bg-terceira hover:text-white">Get a Quote Now</a>
 
                     </div>
 
@@ -26,7 +26,7 @@ export default function Quote(){
                         
                         <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300">
                             
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-terceira">
                                 
                                 <h3 className="text-xl font-semibold tracking-wide">Start filling out the form</h3>
 
@@ -36,7 +36,7 @@ export default function Quote(){
                                 
                             </div>
 
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-terceira">
                                 
                                 <h3 className="text-xl font-semibold tracking-wide">Define the type of service</h3>
 
@@ -57,7 +57,7 @@ export default function Quote(){
 
                             </div>
 
-                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
+                            <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-terceira">
                                 
                                 <h3 className="text-xl font-semibold tracking-wide">Choose the day and time</h3>
                                 

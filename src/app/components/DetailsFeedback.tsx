@@ -5,10 +5,10 @@ export default function DetailsFeedback() {
 
         <section className="p-6 bg-gray-200">
             
-            <div className="container mx-auto">
+            <div className="container mx-auto mt-20">
                 
                 <span className="block mb-2 text-xs font-medium tracking-widest text-center uppercase dark:text-violet-600">How it works</span>
-                <h2 className="text-5xl font-bold text-center dark:text-gray-900">Fill out our feedback form</h2>
+                <h2 className="text-5xl font-bold text-center uppercase">Fill out our feedback form</h2>
                 
                 <div className="grid gap-6 my-16 lg:grid-cols-3">
                     
@@ -39,9 +39,9 @@ export default function DetailsFeedback() {
 
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-center font-manrope">
                             
-                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white ">Rate Now</a>
+                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white hover:bg-terceira hover:text-white">Rate Now</a>
 
-                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded text-white bg-terceira">Use Google</a>
+                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded text-white bg-terceira hover:bg-white hover:text-black">Use Google</a>
             </div>
 
 

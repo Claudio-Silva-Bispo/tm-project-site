@@ -1,3 +1,4 @@
+import { Cinzel } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -41,6 +42,16 @@ const config: Config = {
         setima:"#DEE2E6",
         oitavo: "#CED4DA",
         nono: "#ADB5BD",
+        cinza:"#F8F9FA",
+        cinzadois:"#E9ECEF",
+        cinzatres:"#DEE2E6",
+        cinzaquatro:"#CED4DA",
+        cinzacinco:"#ADB5BD",
+        cinzaseis:"#6C757D",
+        cinzasete:"#495057",
+        cinzaoito:"#343A40",
+        cinzanove:"#212529",
+
         
       },
     },
