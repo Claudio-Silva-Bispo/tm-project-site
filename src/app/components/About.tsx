@@ -17,9 +17,9 @@ export default function About(){
 
                         <div>
 
-                            <h3 className="text-2xl font-bold tracking-tight sm:text-6xl ">Sobre nós</h3>
+                            <h3 className="text-2xl font-bold tracking-tight sm:text-6xl ">About Us</h3>
                             
-                            <p className="mt-3 text-lg font-manrope">Pegar o texto que já existe no site e quebrar ele em partes.</p>
+                            <p className="mt-3 text-lg font-manrope">The essence of our cleaning service is putting the customer first, ensuring quality, reliability, and satisfaction in every detail.</p>
 
                             <div className="mt-12 space-y-12">
 
@@ -49,6 +49,7 @@ export default function About(){
                                     </div>
 
                                     <div className="ml-4">
+
                                         <h4 className="text-lg font-manrope leading-6 ">Cu imperdiet posidonium sed</h4>
                                         <p className="mt-2 font-manrope">Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.</p>
                                     </div>
@@ -92,9 +93,9 @@ export default function About(){
 
                             <div className="lg:col-start-2">
 
-                                <h3 className="text-2xl font-bold tracking-tight sm:text-6xl ">Sobre nosso atendimento</h3>
+                                <h3 className="text-2xl font-bold tracking-tight sm:text-6xl ">About Our Service</h3>
 
-                                <p className="mt-3 text-lg font-manrope">Falar aqui sobre horário de atendimento, dias, como agendar, se temos alguma preferência.</p>
+                                <p className="mt-3 text-lg font-manrope">Our service is adjustable to your needs; according to your budget, you can determine the day, time, and type of service.</p>
                                 
                                 <div className="mt-12 space-y-12">
 
@@ -108,8 +109,8 @@ export default function About(){
                                         </div>
 
                                         <div className="ml-4">
-                                            <h4 className="text-lg font-manrope leading-6 dark:text-gray-900">Cibo augue offendit has ad</h4>
-                                            <p className="mt-2 font-manrope">An per velit appellantur, ut utinam minimum nominavi sit, odio nostro habemus ne nec. Ne sonet regione contentiones est.</p>
+                                            <h4 className="text-lg font-manrope leading-6 dark:text-gray-900">Service Days and Hours</h4>
+                                            <p className="mt-2 font-manrope">Monday to Friday from 8:00 AM to 6:00 PM, Saturday from 8:00 AM to 5:30 PM, closed on Sunday.</p>
                                         </div>
 
                                     </div>
@@ -127,8 +128,8 @@ export default function About(){
 
                                         <div className="ml-4">
 
-                                            <h4 className="text-lg font-manrope leading-6">At eum ferri luptatum lobortis</h4>
-                                            <p className="mt-2 font-manrope">Te per quidam maiorum ocurreret, etiam delicatissimi usu ad. Ne has quod periculis. Te sit primis iisque efficiantur.</p>
+                                            <h4 className="text-lg font-manrope leading-6">Flexible Work Formats to Suit Your Needs</h4>
+                                            <p className="mt-2 font-manrope">Work formats: daily, weekly, biweekly, monthly, or occasional.</p>
 
                                         </div>
                                     </div>
@@ -146,8 +147,8 @@ export default function About(){
 
                                         <div className="ml-4">
 
-                                            <h4 className="text-lg font-manrope leading-6 ">Dicunt verterem evertitur eu sea</h4>
-                                            <p className="mt-2 font-manrope">Audire principes rationibus eam an, autem nominavi luptatum per te. Sumo fabulas vim eu, sonet saperet eleifend ut vix.</p>
+                                            <h4 className="text-lg font-manrope leading-6 ">We serve the cities listed below and surrounding areas.</h4>
+                                            <p className="mt-2 font-manrope">Bellevue, Clyde Hill, Kirkland, Medina, Newcastle, Renton, Yarrow Point, Bothell, Mercer Island, Redmond, Snohomish, Covington, Lywood</p>
 
                                         </div>
 
