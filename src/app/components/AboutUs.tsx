@@ -5,7 +5,7 @@ export default function AboutUs(){
 
         <section className="bg-gray-100" id="AboutUs">
             
-            <div className="container mx-auto flex flex-col p-6">
+            <div className="container mx-auto flex flex-col p-0 md:p-6 mb-20 md:mb-0">
 
                 <h2 className="py-4 text-6xl font-bold text-start uppercase mt-20 md:text-center ">Why Choose Us</h2>
 

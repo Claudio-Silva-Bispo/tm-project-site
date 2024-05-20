@@ -5,8 +5,10 @@ export default function Testimonials(){
 
         <section className=" bg-primeira pb-10 md:pb-0" id="Testimonials">
             
-            <div className="container flex flex-col justify-center items-center mx-auto mb-10 md:p-8 md:px-10 pt-10">
-                <h1 className="p-4 text-5xl font-semibold leading-none text-center text-white uppercase ">What our customers are saying about us</h1>
+            <div className="container flex flex-col justify-start md:justify-center items-center mx-auto mb-10 md:p-8 md:px-10 pt-10">
+
+                <h1 className="p-4 text-5xl font-semibold leading-none text-start md:text-center text-white uppercase mt-10 md:mt-0">What our customers are saying about us</h1>
+
             </div>
 
             <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10 bg-white">
@@ -28,7 +30,7 @@ export default function Testimonials(){
 
                     <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-primeira text-gray-50">
 
-                        <img src="/assets/Testimonials/Imagem2.png" alt="Letra inicial do nome da pessoa quem fez a avalição sobre a empresa" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
+                        {/* <img src="/assets/Testimonials/Imagem2.png" alt="Letra inicial do nome da pessoa quem fez a avalição sobre a empresa" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " /> */}
 
                         <p className="text-xl font-semibold leading-tight">Cliff Wylie</p>
                         
@@ -75,7 +77,8 @@ export default function Testimonials(){
 
                     <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-primeira text-gray-50">
 
-                        <img src="/assets/Testimonials/Imagem3.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
+                        {/* <img src="/assets/Testimonials/Imagem3.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " /> */}
+
                         <p className="text-xl font-semibold leading-tight">Jeanne Walford</p>
                         
                         <div className="rating">
@@ -118,7 +121,7 @@ export default function Testimonials(){
 
                     <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-primeira text-gray-50">
                         
-                        <img src="/assets/Testimonials/Imagem4.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full" />
+                        {/* <img src="/assets/Testimonials/Imagem4.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full" /> */}
 
                         <p className="text-xl font-semibold leading-tight">Eileen Asmundson</p>
                         
@@ -162,7 +165,8 @@ export default function Testimonials(){
 
                     <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-primeira text-gray-50">
                         
-                        <img src="/assets/Testimonials/Imagem1.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
+                        {/* <img src="/assets/Testimonials/Imagem1.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " /> */}
+
                         <p className="text-xl font-semibold leading-tight">Susanne Aagerup</p>
                         
                         <div className="rating">
@@ -205,7 +209,8 @@ export default function Testimonials(){
 
                     <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-primeira text-gray-50">
 
-                        <img src="/assets/Testimonials/Imagem5.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
+                        {/* <img src="/assets/Testimonials/Imagem5.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " /> */}
+
                         <p className="text-xl font-semibold leading-tight">Elizabeth Kennedy</p>
                         
                         <div className="rating">
@@ -249,7 +254,8 @@ export default function Testimonials(){
 
                     <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-primeira text-gray-50">
 
-                        <img src="/assets/Testimonials/Imagem6.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " />
+                        {/* <img src="/assets/Testimonials/Imagem6.png" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full " /> */}
+
                         <p className="text-xl font-semibold leading-tight">Lauren Moynihan</p>
                         
                         <div className="rating">

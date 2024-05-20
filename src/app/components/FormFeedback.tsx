@@ -49,7 +49,7 @@ export default function FormFeedback(){
 
         <div className="bg-cinzadois min-h-full md:flex md:justify-center" id="FormFeedback">
 
-            <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-10 p-10">
+            <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-10 p-6 md:p-10">
 
             <h1 className="text-6xl font-orelega tracking-tight text-[#47667B] uppercase mt-20 md:mt-0">Your Opinion Matters to Us!</h1>
             <h2 className="mt-2 text-lg md:text-2xl leading-8 font-manrope">Our survey is designed to improve our services, ensuring your home is more comfortable and secure.</h2>
@@ -58,7 +58,7 @@ export default function FormFeedback(){
 
             </div>
 
-            <div className="w-[100%] p-10">
+            <div className="w-[100%] p-4 md:p-10 pb-20 md:pb-0">
 
                 <form
                 name="form-feedback"

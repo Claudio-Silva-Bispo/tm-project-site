@@ -25,7 +25,7 @@ export default function HomePage(){
             </div>
 	        
             <div>
-                <img src="/assets/Navbar/logo-empresa.png" alt="" className="w-3/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40" />
+                <img src="/assets/Navbar/logo-empresa.png" alt="" className="w-3/6 mx-auto mb-36 -mt-20 rounded-lg shadow-md lg:-mt-40" />
             </div>
 
         </section>
