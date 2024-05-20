@@ -111,6 +111,7 @@ body {
 }
 
 
+/* Ajuste para o formulário de Feedback */
 .rating:not(:checked) > input {
   position: absolute;
   appearance: none;
@@ -144,5 +145,19 @@ body {
   color: #ffa723;
 }
 
+/* Ajustes para o Formulário de Cotação/Orçamento */
+
+
+.container-form {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-quote {
+  width: 80%;
+}
 
 

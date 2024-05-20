@@ -5,7 +5,7 @@ export default function Services(){
 
         <section className="p-4 lg:p-8" id="Services">
 
-            <div className="container mx-auto space-y-12 md:mt-20">
+            <div className="container mx-auto space-y-12 mt-20">
 
                 <div className="font-bold text-6xl uppercase">
                     <h1>About Our Services</h1>

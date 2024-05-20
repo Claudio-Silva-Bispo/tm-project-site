@@ -9,15 +9,15 @@ export default function About(){
 
                     <div>
 
-                        <h2 className="text-3xl font-bold tracking-tight text-center sm:text-6xl uppercase">Details of Our Company</h2>
-                        <p className="max-w-3xl mx-auto mt-4 text-xl text-center font-manrope">Cleanliness that embraces comfort, making every space a cozy retreat.</p>
+                        <h2 className="text-4xl font-bold tracking-tight text-start sm:text-6xl uppercase mt-10 md:mt-0 md:text-center mb-10 md:mb-0">Details of Our Company</h2>
+                        <p className="max-w-3xl mx-auto mt-4 text-xl text-start md:text-center font-manrope">Cleanliness that embraces comfort, making every space a cozy retreat.</p>
                     </div>
 
                     <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 
                         <div>
 
-                            <h3 className="text-2xl font-bold tracking-tight sm:text-6xl uppercase  ">About Us</h3>
+                            <h3 className="text-4xl font-bold tracking-tight sm:text-6xl uppercase">About Us</h3>
                             
                             <p className="mt-3 text-lg font-manrope">The essence of our cleaning service is putting the customer first, ensuring quality, reliability, and satisfaction in every detail.</p>
 
@@ -115,7 +115,7 @@ export default function About(){
 
                             <div className="lg:col-start-2">
 
-                                <h3 className="text-2xl font-bold tracking-tight sm:text-6xl uppercase ">About Our Service</h3>
+                                <h3 className="text-4xl font-bold tracking-tight sm:text-6xl uppercase ">About Our Service</h3>
 
                                 <p className="mt-3 text-lg font-manrope">Our service is adjustable to your needs; according to your budget, you can determine the day, time, and type of service.</p>
                                 
@@ -131,7 +131,7 @@ export default function About(){
                                         </div>
 
                                         <div className="ml-4">
-                                            <h4 className="text-lg font-manrope leading-6 dark:text-gray-900">Service Days and Hours</h4>
+                                            <h4 className="text-lg font-manrope leading-6 ">Service Days and Hours</h4>
                                             <p className="mt-2 font-manrope">Monday to Friday from 8:00 AM to 6:00 PM, Saturday from 8:00 AM to 5:30 PM, closed on Sunday.</p>
                                         </div>
 
@@ -140,7 +140,7 @@ export default function About(){
                                     <div className="flex">
 
                                         <div className="flex-shrink-0">
-                                            <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                                            <div className="flex items-center justify-center w-12 h-12 rounded-md">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                                 </svg>

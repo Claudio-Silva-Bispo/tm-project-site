@@ -5,11 +5,11 @@ export default function Contact(){
         
         <section className="py-6 bg-segunda" id="Contact">
             
-            <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+            <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x mt-10 md:mt-0">
 
                 <div className="py-6 md:py-0 md:px-6 flex flex-col justify-center">
                     
-                    <h1 className="text-6xl font-bold uppercase">Get in touch</h1>
+                    <h1 className="text-6xl font-bold uppercase mb-10 md:mb-0">Get in touch</h1>
                     
                     <p className="pt-2 pb-4 font-manrope">Fill in the form to start a conversation</p>
                     

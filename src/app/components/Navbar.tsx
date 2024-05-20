@@ -31,7 +31,7 @@ export default function Navbar(){
                     </li>
 
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="/Feedback" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Feedback</a>
+                        <a rel="noopener noreferrer" href="#FormFeedback" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Feedback</a>
                     </li>
 
                     <li className="flex">

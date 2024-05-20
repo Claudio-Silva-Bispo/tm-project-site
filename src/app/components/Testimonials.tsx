@@ -3,9 +3,9 @@
 export default function Testimonials(){
     return(
 
-        <section className="my-8 bg-primeira" id="Testimonials">
+        <section className=" bg-primeira pb-10 md:pb-0" id="Testimonials">
             
-            <div className="container flex flex-col justify-center items-center mx-auto mb-10 md:p-8 md:px-10">
+            <div className="container flex flex-col justify-center items-center mx-auto mb-10 md:p-8 md:px-10 pt-10">
                 <h1 className="p-4 text-5xl font-semibold leading-none text-center text-white uppercase ">What our customers are saying about us</h1>
             </div>
 

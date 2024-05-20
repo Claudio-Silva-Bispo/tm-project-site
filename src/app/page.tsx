@@ -7,8 +7,10 @@ import Contact from "./components/Contact"
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import Feedback from "./components/Testimonials";
-import Quote from "./components/Quote";
 import DetailsFeedback from "./components/DetailsFeedback";
+import FormFeedback from "./components/FormFeedback";
+import Quote from "./components/Quote";
+import FormQuote from "./components/FormQuote";
 
 export default function Home() {
   return (
@@ -21,7 +23,9 @@ export default function Home() {
       <Services/>
       <DetailsFeedback/>
       <Feedback/>
+      <FormFeedback/>
       <Quote/>
+      <FormQuote/>
 
     </div>
   );

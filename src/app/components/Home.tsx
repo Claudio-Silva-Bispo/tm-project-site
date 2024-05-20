@@ -15,9 +15,9 @@ export default function HomePage(){
                     
                     <div className="flex flex-wrap justify-center">
                         
-                        <button type="button" className="px-8 py-3 m-2 text-lg border rounded hover:bg-terceira hover:text-white font-manrope text-white">Quote</button>
+                        <a href="#FormQuote" type="button" className="px-8 py-3 m-2 text-lg border rounded hover:bg-terceira hover:text-white font-manrope text-white">Quote</a>
                         
-                        <button type="button" className="px-8 py-3 m-2 text-lg border rounded hover:bg-terceira hover:text-white font-manrope text-white">Contact</button>
+                        <a href="#Contact" type="button" className="px-8 py-3 m-2 text-lg border rounded hover:bg-terceira hover:text-white font-manrope text-white">Contact</a>
 
                     </div>
 

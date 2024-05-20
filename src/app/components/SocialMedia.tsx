@@ -16,18 +16,18 @@ export default function SocialMedia(){
 
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 
-                    <h1 className="text-4xl font-bold leading-none sm:text-6xl text-white uppercase">Social Media
+                    <h1 className="text-4xl font-bold leading-none sm:text-6xl text-white uppercase text-start md:text-center">Social Media
                     
                     </h1>
 
-                    <p className="mt-6 mb-8 text-lg sm:mb-12 text-white font-manrope">Explore our social media channels to dive deeper into our services, watch videos, and read customer feedback. Follow us for a closer look at what we offer!
+                    <p className="mt-6 mb-8 text-lg sm:mb-12 text-white font-manrope text-start md:text-center">Explore our social media channels to dive deeper into our services, watch videos, and read customer feedback. Follow us for a closer look at what we offer!
                     </p>
                     
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start font-manrope">
                         
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-segunda text-white hover:bg-setima hover:text-black">Instagram</a>
+                        <a rel="noopener noreferrer" href="https://www.instagram.com/reel/CzAxO7kuDqN/?igsh=c2hrODVveW9sN2Qx" target='_blank' className="px-8 py-3 text-lg font-semibold rounded bg-segunda text-white hover:bg-setima hover:text-black">Instagram</a>
 
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded text-white hover:bg-white hover:text-black">Facebook</a>
+                        <a rel="noopener noreferrer" href="https://www.facebook.com/Oliveirahousecleaning?mibextid=LQQJ4d" target='_blank' className="px-8 py-3 text-lg font-semibold border rounded text-white hover:bg-white hover:text-black">Facebook</a>
                     </div>
 
                 </div>
