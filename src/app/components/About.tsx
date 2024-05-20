@@ -17,7 +17,7 @@ export default function About(){
 
                         <div>
 
-                            <h3 className="text-2xl font-bold tracking-tight sm:text-6xl ">About Us</h3>
+                            <h3 className="text-2xl font-bold tracking-tight sm:text-6xl uppercase  ">About Us</h3>
                             
                             <p className="mt-3 text-lg font-manrope">The essence of our cleaning service is putting the customer first, ensuring quality, reliability, and satisfaction in every detail.</p>
 
@@ -33,8 +33,8 @@ export default function About(){
                                     </div>
 
                                     <div className="ml-4">
-                                        <h4 className="text-lg font-manrope leading-6 ">Per ei quaeque sensibus</h4>
-                                        <p className="mt-2 font-manrope">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p>
+                                        <h4 className="text-lg font-manrope leading-6 ">Delivering spotless, sanitized, and organized workspaces for people and businesses.</h4>
+                                        <p className="mt-2 font-manrope">Oliver Business Cleaning Services was founded in 2005 with a mission to provide top-notch residential and commercial cleaning services to businesses all over the city. Our team is dedicated to delivering spotless, sanitized, and organized workspaces for our clients. We understand the importance of a clean environment in enhancing productivity and leaving a great impression on clients and visitors.</p>
                                     </div>
 
                                 </div>
@@ -50,8 +50,8 @@ export default function About(){
 
                                     <div className="ml-4">
 
-                                        <h4 className="text-lg font-manrope leading-6 ">Cu imperdiet posidonium sed</h4>
-                                        <p className="mt-2 font-manrope">Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.</p>
+                                        <h4 className="text-lg font-manrope leading-6 ">Using eco-friendly products and modern techniques to minimize environmental impact.</h4>
+                                        <p className="mt-2 font-manrope">With a focus on sustainability, we use eco-friendly products and modern cleaning techniques to minimize our environmental impact. Our staff is extensively trained and equipped to handle all cleaning requirements, ensuring thoroughness and efficiency with every service. We take pride in our attention to detail, reliability, and outstanding customer service.</p>
                                     </div>
 
                                 </div>
@@ -70,12 +70,34 @@ export default function About(){
 
                                     <div className="ml-4">
 
-                                        <h4 className="text-lg font-manrope leading-6 ">Nulla omittam sadipscing mel ne</h4>
-                                        <p className="mt-2 font-manrope">At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.</p>
+                                        <h4 className="text-lg font-manrope leading-6 ">Attention to detail, reliability, and outstanding customer service.</h4>
+                                        <p className="mt-2 font-manrope">At Oliver Business Cleaning Services, we prioritize building long-term relationships with our clients by consistently delivering exceptional cleaning solutions tailored to their specific needs. Our commitment to excellence and professionalism sets us apart, making us the preferred cleaning service provider for businesses across various industries.</p>
 
                                     </div>
 
                                 </div>
+
+                                <div className="flex">
+
+                                    <div className="flex-shrink-0">
+
+                                        <div className="flex items-center justify-center w-12 h-12 rounded-md ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="ml-4">
+
+                                        <h4 className="text-lg font-manrope leading-6 ">Building long-term relationships by consistently delivering exceptional cleaning solutions.</h4>
+                                        <p className="mt-2 font-manrope">Whether it's daily  home and comercial cleaning, cleaning maintenance, or specialized deep cleaning, we are here to elevate the cleanliness and hygiene standards of your workspace  our home, allowing you to focus on your core business activities. Experience the difference with Oliver Business Cleaning Services.</p>
+
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
 
@@ -93,7 +115,7 @@ export default function About(){
 
                             <div className="lg:col-start-2">
 
-                                <h3 className="text-2xl font-bold tracking-tight sm:text-6xl ">About Our Service</h3>
+                                <h3 className="text-2xl font-bold tracking-tight sm:text-6xl uppercase ">About Our Service</h3>
 
                                 <p className="mt-3 text-lg font-manrope">Our service is adjustable to your needs; according to your budget, you can determine the day, time, and type of service.</p>
                                 
