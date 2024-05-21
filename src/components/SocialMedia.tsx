@@ -24,7 +24,7 @@ export default function SocialMedia(){
                     
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start font-manrope mb-20 md:mb-0">
                         
-                        <a rel="noopener noreferrer" href="https://www.instagram.com/reel/CzAxO7kuDqN/?igsh=c2hrODVveW9sN2Qx" target='_blank' className="px-8 py-3 text-lg font-semibold rounded bg-segunda text-white hover:bg-setima hover:text-black">Instagram</a>
+                        <a rel="noopener noreferrer" href="https://www.instagram.com/oliverbusinessofficial?igsh=MWZodDR0MzVrNWM2NA%3D%3D&utm_source=qr" target='_blank' className="px-8 py-3 text-lg font-semibold rounded bg-segunda text-white hover:bg-setima hover:text-black">Instagram</a>
 
                         <a rel="noopener noreferrer" href="https://www.facebook.com/Oliveirahousecleaning?mibextid=LQQJ4d" target='_blank' className="px-8 py-3 text-lg font-semibold border rounded text-white hover:bg-white hover:text-black">Facebook</a>
                     </div>

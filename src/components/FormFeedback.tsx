@@ -64,7 +64,7 @@ export default function FormFeedback(){
                 name="form-feedback-oliver"
                 method="post"
                 data-netlify="true"
-                className="w-[100%] md:w-[80%] mx-auto bg-cinzacinco rounded-lg p-10 grid-cols-* md:mt-20"
+                className="w-[100%] md:w-[80%] mx-auto bg-[#47667B] rounded-lg p-10 grid-cols-* md:mt-20"
                 id="form-feedback-oliver"
                 >
                 <input type="hidden" name="form-feedback-oliver" value="feedback"/>
