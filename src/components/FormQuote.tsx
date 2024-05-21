@@ -80,14 +80,15 @@ export default function FormQuote() {
     
     <form 
     ref={formRef}
-    name='form-quote' 
-    method='post' 
-    data-netlify="true" 
+    name='form-quote-oliver' 
+    method='post'
+    data-netlify="true"
     netlify-honeypot="bot-field"
-    onSubmit={handleSubmit} 
+    onSubmit={handleSubmit}
+    id="FormQuote"
     className='bg-primeira grid md:flex px-5 md:px-10 justify-center items-center min-h-[640px]'>
         
-        <input type="hidden" name="form-name" value="form-quote" />
+        <input type="hidden" name="form-name" value="form-quote-oliver" />
         <input type="hidden" name="firstName" value={formData.firstName} />
         <input type="hidden" name="phone" value={formData.phone} />
         <input type="hidden" name="email" value={formData.email} />

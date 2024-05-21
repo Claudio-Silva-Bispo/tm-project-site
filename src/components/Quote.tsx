@@ -19,7 +19,7 @@ export default function Quote(){
                         </div>
 
                         <div className="flex justify-center items-center w-full md:justify-start mb-10 md:mb-0">
-                            <a href="#" className="px-8 py-3 text-lg font-semibold rounded bg-white hover:bg-terceira hover:text-white">Get a Quote Now</a>
+                            <a href="#FormQuote" className="px-8 py-3 text-lg font-semibold rounded bg-white hover:bg-terceira hover:text-white">Get a Quote Now</a>
                         </div>
 
                     </div>
