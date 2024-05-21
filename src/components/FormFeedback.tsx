@@ -61,12 +61,13 @@ export default function FormFeedback(){
             <div className="w-[100%] p-4 md:p-10 pb-20 md:pb-0">
 
                 <form
-                name="form-feedback"
+                name="form-feedback-oliver"
                 method="post"
                 data-netlify="true"
                 className="w-[100%] md:w-[80%] mx-auto bg-cinzacinco rounded-lg p-10 grid-cols-* md:mt-20"
+                id="form-feedback-oliver"
                 >
-                <input type="hidden" name="form-feedback" value="feedback"/>
+                <input type="hidden" name="form-feedback-oliver" value="feedback"/>
 
 
                         <div>
