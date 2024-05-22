@@ -48,13 +48,13 @@ export default function Services(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                     
-                    <img src="/assets/Services/Imagem3.jpg" alt="Imagem sobre nossos serviços" className="h-80 aspect-video" />
+                    <img src="/assets/Services/Imagem8.jpg" alt="Imagem sobre nossos serviços" className="h-80 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
-                        <span className="text-xs uppercase">Move-Out Cleaning</span>
+                        <span className="text-xs uppercase">Move-In / Move-Out cleaning</span>
                         
-                        <h3 className="text-3xl font-bold">Move out worry-free with our move-out cleaning: leave everything spotless for the next occupants!</h3>
+                        <h3 className="text-3xl font-bold">Make your move smoother with Oliver  Cleaning. We provide thorough cleaning for homes, apartments, and condos during move-ins and move-outs.</h3>
                         
                         <p className="my-6">Move-out cleaning is an essential step when leaving a home. It involves thorough cleaning to ensure the place is spotless for the next occupants.</p>
 
@@ -108,6 +108,23 @@ export default function Services(){
                         <h3 className="text-3xl font-bold">Clean and shining shower with vegan solutions: kindness and efficiency for your home!</h3>
                         
                         <p className="my-6 dark:text-gray-600">Keeping your shower clean doesn't have to mean using harsh chemicals. Vegan home solutions offer gentle yet effective ways to keep your shower shining.</p>
+
+                        <button type="button" className="self-start">Get a quote now!</button>
+
+                    </div>
+                </div>
+
+                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+                    
+                    <img src="/assets/Services/Imagem7.png" alt="Imagem sobre nossos serviços" className="h-80 aspect-video" />
+                    
+                    <div className="flex flex-col justify-center flex-1 p-6">
+                        
+                        <span className="text-xs uppercase">Residencial & Commercial</span>
+                        
+                        <h3 className="text-3xl font-bold">Let us handle the cleaning so you can focus on business: spotless spaces that impress your clients and boost productivity!</h3>
+                        
+                        <p className="my-6">A clean and well-maintained workspace is key to a professional image and a productive environment. Our commercial cleaning services ensure that your office, store, or facility is pristine and inviting. From daily maintenance to deep cleans, we tailor our services to meet your specific needs.</p>
 
                         <button type="button" className="self-start">Get a quote now!</button>
 
