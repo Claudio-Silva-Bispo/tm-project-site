@@ -15,6 +15,8 @@ export default function Footer(){
                     <li><a href="#Contact">Contact</a></li>
                     <li><a href="#FormQuote">Quote</a></li>
                     <li><a href="#FormFeedback">Feedback</a></li>
+                    <li><a href="/Teams">Teams</a></li>
+                    <li><a href="/LoginDashboard">Dashboard</a></li>
                     
                 </ul>
 

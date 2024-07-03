@@ -5,7 +5,7 @@ export default function Quote(){
 
         <section className="bg-cinzacinco" id="Quote">
             
-            <div className="container max-w-5xl md:px-4 py-12 mx-auto">
+            <div className="container max-w-5xl md:px-4 py-12 mx-auto pt-20">
                 
                 <div className="grid gap-4 mx-4 sm:grid-cols-12">
                     
