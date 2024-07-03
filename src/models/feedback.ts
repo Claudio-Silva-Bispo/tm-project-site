@@ -3,7 +3,6 @@
 export interface Feedback {
     nome: string;
     email: string;
-    telefone: string;
     nota: number;
     mensagem: string;
 }
