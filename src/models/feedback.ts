@@ -5,4 +5,5 @@ export interface Feedback {
     email: string;
     nota: number;
     mensagem: string;
+    mostrar_tela: string;
 }

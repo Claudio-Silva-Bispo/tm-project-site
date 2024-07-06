@@ -12,9 +12,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
         }
 
+        const mostrar_tela = ""; // Inicializa o campo mostrar_tela como vazio
+
         try {
             const { db } = await connectToDatabase();
-            const result = await db.collection('t_feedback').insertOne({ nome, email, nota, mensagem });
+            const result = await db.collection('t_feedback').insertOne({ nome, email, nota, mensagem, mostrar_tela });
             return res.status(201).json({ message: 'Feedback salvo com sucesso', id: result.insertedId });
         } catch (error) {
             console.error('Erro ao salvar o feedback:', error);

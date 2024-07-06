@@ -5,15 +5,15 @@ import { Contato } from '../../models/contato';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
-        const { nome, email, telefone, servico, localizacao, mensagem }: Contato = req.body;
+        const { nome, email, telefone, mensagem }: Contato = req.body;
 
-        if (!nome || !email || !telefone || !servico || !localizacao || !mensagem) {
+        if (!nome || !email || !telefone || !mensagem) {
             return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
         }
 
         try {
             const { db } = await connectToDatabase();
-            const result = await db.collection('t_contato').insertOne({ nome, email, telefone, servico, localizacao, mensagem });
+            const result = await db.collection('t_contato').insertOne({ nome, email, telefone, mensagem });
             return res.status(201).json({ message: 'Contato salvo com sucesso', id: result.insertedId });
         } catch (error) {
             console.error('Erro ao salvar contato:', error);

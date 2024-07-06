@@ -2,7 +2,9 @@
 /* Importações gerais */
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import '../globals.css';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 /* Importação de componentes */
 import Navbar from '../components/Navbar';
@@ -15,6 +17,8 @@ export const metadata = {
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const isDashboard = router.pathname.startsWith('/Dashboard');
 
 
   return (
@@ -23,10 +27,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>{metadata.title}</title>
         <meta name="description" />
       </Head>
-      <Navbar />
+
+      {!isDashboard && <Navbar />}
         <Component {...pageProps} />
       <WhatsAppWidget />
-      <Footer />
+      {!isDashboard && <Footer />}
+      <SpeedInsights />
     </>
   );
 }

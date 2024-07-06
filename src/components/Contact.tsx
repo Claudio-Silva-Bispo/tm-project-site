@@ -1,6 +1,59 @@
+'use client'
 
+import { useState } from 'react';
+
+interface FormData {
+    nome: string;
+    email: string;
+    telefone: string;
+    mensagem: string;
+}
 
 export default function Contact(){
+
+    const [formulario, setFormulario] = useState<FormData>({
+        nome: '',
+        email: '',
+        telefone: '',
+        mensagem: ''
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormulario({ ...formulario, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        console.log('Enviando formulário:', formulario);
+
+        try {
+            const response = await fetch('http://localhost:3001/api/criarContato', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formulario),
+            });
+
+            if (response.ok) {
+                alert('Contact sent successfully');
+                setFormulario({
+                    nome: '',
+                    email: '',
+                    telefone: '',
+                    mensagem: ''
+                });
+            } else {
+                alert('Error sending contact.');
+            }
+        } catch (error) {
+            console.error('Error sending contact:', error);
+            alert('Error sending contact.');
+        }
+    };
+
+
     return(
         
         <section className="py-6 bg-segunda" id="Contact">
@@ -39,27 +92,54 @@ export default function Contact(){
                     </div>
                 </div>
 
-                <form className="flex flex-col py-6 space-y-6 md:py-5 md:px-6">
+                <form 
+                className="flex flex-col py-6 space-y-6 md:py-5 md:px-6"
+                id='formulario-contato'
+                name='formulario-contato'
+                onSubmit={handleSubmit}>
                     
                     <label className="block">
                         
                         <span className="mb-5 font-manrope">Name</span>
                         
-                        <input type="text" placeholder="Write your name here" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 p-2 font-manrope" />
+                        <input 
+                        id='nome'
+                        name='nome'
+                        type="text" 
+                        placeholder="Write your name here" 
+                        className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 p-2 font-manrope"
+                        value={formulario.nome}
+                        onChange={handleChange} />
 
                     </label>
 
                     <label className="block">
 
                         <span className="mb-2 font-manrope">Email address</span>
-                        <input type="email" placeholder="Your-email@gmail.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 p-2 font-manrope" />
+                        
+                        <input
+                        id='email'
+                        name='email'
+                        type="email" 
+                        placeholder="Your-email@gmail.com" 
+                        className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 p-2 font-manrope"
+                        value={formulario.email}
+                        onChange={handleChange} />
 
                     </label>
 
                     <label className="block">
 
                         <span className="mb-2 font-manrope">Phone number</span>
-                        <input type="number" placeholder="XXX-XXX-XXXX" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 p-2 font-manrope" />
+                        
+                        <input 
+                        id='telefone'
+                        name='telefone'
+                        type="number" 
+                        placeholder="XXX-XXX-XXXX" 
+                        className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 p-2 font-manrope"
+                        value={formulario.telefone}
+                        onChange={handleChange} />
 
                     </label>
                     
@@ -67,11 +147,16 @@ export default function Contact(){
 
                         <span className="mb-1 font-manrope">Message</span>
                         
-                        <textarea  className="block w-full rounded-md focus:ring focus:ring-opacity-75"></textarea>
+                        <textarea  
+                        id='mensagem'
+                        name='mensagem'
+                        className="block w-full rounded-md focus:ring focus:ring-opacity-75"
+                        value={formulario.mensagem}
+                        onChange={handleChange}></textarea>
 
                     </label>
 
-                    <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-gray-50 text-black font-manrope w-full">Submit</button>
+                    <button type="submit" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-gray-50 text-black font-manrope w-full">Submit</button>
 
                 </form>
 

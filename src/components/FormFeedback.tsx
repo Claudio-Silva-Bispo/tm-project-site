@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 interface FormData {
     nome: string;
@@ -32,7 +31,7 @@ export default function FormFeedback() {
         console.log('Enviando formulário:', formulario);
 
         try {
-            const response = await fetch('https://oliver-project-site.vercel.app/api/criarFeedback', {
+            const response = await fetch('http://localhost:3000/api/criarFeedback', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
