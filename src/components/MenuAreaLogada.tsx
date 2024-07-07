@@ -5,7 +5,7 @@ interface SidebarProps {
   setSection: (section: Section) => void;
 }
 
-export type Section = 'usuarios' | 'contatos' | 'feedbacks' | 'agendamentos' | 'addUser' | 'editUser' | 'deleteUser' | 'Tema' | 'Documentação';
+export type Section = 'usuarios' | 'contatos' | 'feedbacks' | 'orcamentos' | 'addUser' | 'editUser' | 'deleteUser' | 'Tema' | 'Documentação';
 
 const MenuAreaLogada: React.FC<SidebarProps> = ({ setSection }) => {
 
@@ -32,7 +32,7 @@ const MenuAreaLogada: React.FC<SidebarProps> = ({ setSection }) => {
                 <button onClick={() => setSection('usuarios')} className="text-left">Usuários</button>
                 <button onClick={() => setSection('contatos')} className="text-left">Contatos</button>
                 <button onClick={() => setSection('feedbacks')} className="text-left">Feedbacks</button>
-                <button onClick={() => setSection('agendamentos')} className="text-left">Agendamentos</button>
+                <button onClick={() => setSection('orcamentos')} className="text-left">Orçamentos</button>
             </div>
             </div>
 

@@ -60,19 +60,58 @@ export default function FormQuote() {
     }
   };
 
-  const handleSubmit = (event:any) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     // Prevenir a submissão do formulário se não estiver na última etapa
     if (currentStep < 4) {
       event.preventDefault();
       
       nextStep();
 
-    }else {
-        console.log('Enviando o formulário...', formData);
-        if(formRef.current !== null){
-          formRef.current.submit(); // Isso aciona o envio do formulário.
-      }
+      console.log('Dados preenchidos', formData);
+
+    } else {
+      // Se estiver na última etapa, envia os dados para a API
+      console.log('Enviando o formulário...', formData);
+
+      // Validação de campos obrigatórios
+      if (!formData.firstName || !formData.phone || !formData.email || !formData.streetAddress || !formData.city || !formData.region || !formData.postalCode || !formData.room || !formData.pet || !formData.frequency || !formData.date || !formData.hour || !formData.message) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return; // interrompe o envio se algum campo obrigatório estiver vazio
     }
+
+    console.log('Enviando o formulário com os dados:', formData);
+
+      try {
+          const response = await fetch('http://localhost:3000/api/criarOrcamento', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(
+                
+                {
+                  ...formData,
+                  room: formData.room.toString(),  // Garantir que valores numéricos são convertidos para strings, se necessário
+                  pet: formData.pet,
+                  frequency: formData.frequency
+                }
+              ),
+
+              
+          });
+
+          if (response.ok) {
+              const result = await response.json();
+              console.log('Resposta do servidor:', result);
+              alert('Orçamento enviado com sucesso!');
+          } else {
+              throw new Error('Falha ao enviar orçamento.');
+          }
+      } catch (error) {
+          console.error('Erro ao enviar dados:', error, formData);
+          alert('Erro ao enviar o formulário. Por favor, tente novamente.');
+      }
+  }
     
   };
 
@@ -185,7 +224,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ onChange }) => {
                             <div className="mt-2">
                                 
                                 <input
-                                type="number"
+                                type="text"
                                 name="phone"
                                 id="phone"
                                 autoComplete="phone"
@@ -472,9 +511,9 @@ const Schedule: React.FC<ScheduleProps> = ({ onChange }) => {
 
             <div className="sm:col-span-6">
 
-                <label className="flex mb-2 text-sm font-orelega text-gray-900">Aditional information</label>
+                <label htmlFor='message' className="flex mb-2 text-sm font-orelega text-gray-900">Aditional information</label>
 
-                <textarea id="message" rows={5} className="block w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 p-5" placeholder="Leave a comment..." onChange={(e) => onChange(e.target.name, e.target.value)}></textarea>
+                <textarea id="message" name='message' rows={5} className="block w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 p-5" placeholder="Leave a comment..." onChange={(e) => onChange(e.target.name, e.target.value)}></textarea>
 
             </div>
 

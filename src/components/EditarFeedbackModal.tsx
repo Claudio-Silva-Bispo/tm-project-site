@@ -125,9 +125,9 @@ const EditarFeedbackModal: React.FC<EditarFeedbackModalProps> = ({ usuario, onCl
               <option value="Posição 1">Posição 1</option>
               <option value="Posição 2">Posição 2</option>
               <option value="Posição 3">Posição 3</option>
-              <option value="Posição 3">Posição 4</option>
-              <option value="Posição 3">Posição 5</option>
-              <option value="Posição 3">Posição 6</option>
+              <option value="Posição 4">Posição 4</option>
+              <option value="Posição 5">Posição 5</option>
+              <option value="Posição 6">Posição 6</option>
             </select>
           </div>
 

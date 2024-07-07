@@ -28,7 +28,7 @@ export default function Contact(){
         console.log('Enviando formulário:', formulario);
 
         try {
-            const response = await fetch('http://localhost:3001/api/criarContato', {
+            const response = await fetch('http://localhost:3000/api/criarContato', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
