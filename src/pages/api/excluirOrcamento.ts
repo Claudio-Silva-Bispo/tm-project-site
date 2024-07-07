@@ -14,12 +14,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             const { db } = await connectToDatabase();
             const result = await db.collection('t_orcamento').deleteOne({ _id: new ObjectId(id) });
             if (result.deletedCount === 0) {
-                return res.status(404).json({ error: 'Contato não encontrado' });
+                return res.status(404).json({ error: 'Orçamento não encontrado' });
             }
-            return res.status(200).json({ message: 'Contato excluído com sucesso' });
+            return res.status(200).json({ message: 'Orçamento excluído com sucesso' });
         } catch (error) {
-            console.error('Erro ao excluir contato:', error);
-            return res.status(500).json({ error: 'Erro ao excluir contato' });
+            console.error('Erro ao excluir orçamento:', error);
+            return res.status(500).json({ error: 'Erro ao excluir orçamento' });
         }
     } else {
         res.setHeader('Allow', ['DELETE']);

@@ -55,7 +55,7 @@ const TabelaContatos: React.FC<TabelaOrcamentosProps> = ({ data, onRefresh }) =>
     };
 
     try {
-      const response = await fetch('http://localhost:3000/api/atualizarOrcamento', {
+      const response = await fetch('https://olivercleaningservice.com/api/atualizarOrcamento', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -64,19 +64,19 @@ const TabelaContatos: React.FC<TabelaOrcamentosProps> = ({ data, onRefresh }) =>
       });
       if (!response.ok) {
         const errorResponse = await response.json();
-        throw new Error(errorResponse.error || 'Erro desconhecido ao atualizar contato');
+        throw new Error(errorResponse.error || 'Erro desconhecido ao atualizar orçamento');
       }
       setOrcamentoEditando(null);
       onRefresh();
     } catch (error) {
-      console.error('Erro ao salvar contato:', error);
+      console.error('Erro ao salvar orçamento:', error);
     }
   };
 
   const handleConfirmDelete = async () => {
     if (orcamentoExcluindo) {
       try {
-        const response = await fetch('http://localhost:3000/api/excluirOrcamento', {
+        const response = await fetch('https://olivercleaningservice.com/api/excluirOrcamento', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
@@ -84,12 +84,12 @@ const TabelaContatos: React.FC<TabelaOrcamentosProps> = ({ data, onRefresh }) =>
           body: JSON.stringify({ id: orcamentoExcluindo._id }),
         });
         if (!response.ok) {
-          throw new Error('Erro ao excluir contato');
+          throw new Error('Erro ao excluir orçamento');
         }
         setOrcamentoExcluindo(null);
         onRefresh();
       } catch (error) {
-        console.error('Erro ao excluir contato:', error);
+        console.error('Erro ao excluir orçamento:', error);
       }
     }
   };

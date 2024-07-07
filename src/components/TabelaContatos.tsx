@@ -37,7 +37,7 @@ const TabelaContatos: React.FC<TabelaContatosProps> = ({ data, onRefresh }) => {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/api/atualizarContato', {
+      const response = await fetch('https://olivercleaningservice.com/api/atualizarContato', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const TabelaContatos: React.FC<TabelaContatosProps> = ({ data, onRefresh }) => {
   const handleConfirmDelete = async () => {
     if (usuarioExcluindo) {
       try {
-        const response = await fetch('http://localhost:3000/api/excluirContato', {
+        const response = await fetch('https://olivercleaningservice.com/api/excluirContato', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',

@@ -41,7 +41,7 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
     };
 
     try {
-      const response = await fetch('http://localhost:3000/api/atualizarFeedback', {
+      const response = await fetch('https://olivercleaningservice.com/api/atualizarFeedback', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -50,19 +50,19 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
       });
       if (!response.ok) {
         const errorResponse = await response.json();
-        throw new Error(errorResponse.error || 'Erro desconhecido ao atualizar contato');
+        throw new Error(errorResponse.error || 'Erro desconhecido ao atualizar feedback');
       }
       setUsuarioEditando(null);
       onRefresh();
     } catch (error) {
-      console.error('Erro ao salvar contato:', error);
+      console.error('Erro ao salvar feedback:', error);
     }
   };
 
   const handleConfirmDelete = async () => {
     if (usuarioExcluindo) {
       try {
-        const response = await fetch('http://localhost:3000/api/excluirFeedback', {
+        const response = await fetch('https://olivercleaningservice.com/api/excluirFeedback', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
@@ -70,12 +70,12 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
           body: JSON.stringify({ id: usuarioExcluindo._id }),
         });
         if (!response.ok) {
-          throw new Error('Erro ao excluir contato');
+          throw new Error('Erro ao excluir feedback');
         }
         setUsuarioExcluindo(null);
         onRefresh();
       } catch (error) {
-        console.error('Erro ao excluir contato:', error);
+        console.error('Erro ao excluir feedback:', error);
       }
     }
   };

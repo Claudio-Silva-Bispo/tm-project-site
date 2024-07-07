@@ -29,7 +29,7 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data, onRefresh }) => {
 
   const handleSave = async (updatedUsuario: UserData) => {
     try {
-      const response = await fetch('http://localhost:3000/api/atualizarUsuario', {
+      const response = await fetch('https://olivercleaningservice.com/api/atualizarUsuario', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data, onRefresh }) => {
   const handleConfirmDelete = async () => {
     if (usuarioExcluindo) {
       try {
-        const response = await fetch('http://localhost:3000/api/excluirUsuario', {
+        const response = await fetch('https://olivercleaningservice.com/api/excluirUsuario', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',

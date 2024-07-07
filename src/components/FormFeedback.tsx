@@ -31,7 +31,7 @@ export default function FormFeedback() {
         console.log('Enviando formulário:', formulario);
 
         try {
-            const response = await fetch('http://localhost:3000/api/criarFeedback', {
+            const response = await fetch('https://olivercleaningservice.com/api/criarFeedback', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

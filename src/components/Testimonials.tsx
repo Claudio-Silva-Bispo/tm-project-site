@@ -13,7 +13,7 @@ export default function Testimonials() {
     const [loadingError, setLoadingError] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/buscarFeedbacks')
+        fetch('https://olivercleaningservice.com/api/buscarFeedbacks')
             .then(response => response.json())
             .then((data: Feedback[]) => {
                 const filteredFeedbacks = data.filter(feedback => feedback.mostrar_tela);
