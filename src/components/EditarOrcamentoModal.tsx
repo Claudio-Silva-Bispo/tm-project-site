@@ -45,7 +45,7 @@ const EditarOrcamentoModal: React.FC<EditarOrcamentoModalProps> = ({ orcamento, 
 
   useEffect(() => {
     if (orcamento) {
-      setFormData(orcamento);  // Diretamente usando o objeto usuario
+      setFormData(orcamento); 
     }
   }, [orcamento]);
 

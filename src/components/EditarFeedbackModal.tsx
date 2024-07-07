@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-interface UserData {
+interface FeedbackData {
   _id: string;  // Ajuste aqui para usar _id
   nome: string;
   email: string;
@@ -13,13 +13,13 @@ interface UserData {
 }
 
 interface EditarFeedbackModalProps {
-  usuario: UserData | null;
+  feedback: FeedbackData | null;
   onClose: () => void;
-  onSave: (data: UserData) => void;
+  onSave: (data: FeedbackData) => void;
 }
 
-const EditarFeedbackModal: React.FC<EditarFeedbackModalProps> = ({ usuario, onClose, onSave }) => {
-  const [formData, setFormData] = useState<UserData>({
+const EditarFeedbackModal: React.FC<EditarFeedbackModalProps> = ({ feedback, onClose, onSave }) => {
+  const [formData, setFormData] = useState<FeedbackData>({
     _id: '',  // Ajuste aqui para usar _id
     nome: '',
     email: '',
@@ -30,10 +30,10 @@ const EditarFeedbackModal: React.FC<EditarFeedbackModalProps> = ({ usuario, onCl
   });
 
   useEffect(() => {
-    if (usuario) {
-      setFormData(usuario);  // Diretamente usando o objeto usuario
+    if (feedback) {
+      setFormData(feedback);  // Diretamente usando o objeto usuario
     }
-  }, [usuario]);
+  }, [feedback]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -45,7 +45,7 @@ const EditarFeedbackModal: React.FC<EditarFeedbackModalProps> = ({ usuario, onCl
     await onSave(formData);  // Enviando formData que inclui _id
   };
 
-  if (!usuario) {
+  if (!feedback) {
     return null;
   }
 

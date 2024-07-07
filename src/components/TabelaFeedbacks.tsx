@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EditarFeedbackModal from './EditarFeedbackModal';
 import ConfirmarExclusaoModal from './ConfirmarExclusaoModal';
 
-interface UserData {
+interface FeedbackData {
   _id: string;
   nome: string;
   email: string;
@@ -13,31 +13,31 @@ interface UserData {
 }
 
 interface TabelaFeedbacksProps {
-  data: UserData[];
+  data: FeedbackData[];
   onRefresh: () => void;
 }
 
 const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) => {
-  const [usuarioEditando, setUsuarioEditando] = useState<UserData | null>(null);
-  const [usuarioExcluindo, setUsuarioExcluindo] = useState<UserData | null>(null);
+  const [feedbackEditando, setFeedbackEditando] = useState<FeedbackData | null>(null);
+  const [feedbackExcluindo, setFeedbackExcluindo] = useState<FeedbackData | null>(null);
 
-  const handleEditClick = (usuario: UserData) => {
-    setUsuarioEditando(usuario);
+  const handleEditClick = (feedback: FeedbackData) => {
+    setFeedbackEditando(feedback);
   };
 
-  const handleDeleteClick = (usuario: UserData) => {
-    setUsuarioExcluindo(usuario);
+  const handleDeleteClick = (feedback: FeedbackData) => {
+    setFeedbackExcluindo(feedback);
   };
 
-  const handleSave = async (updatedUsuario: UserData) => {
+  const handleSave = async (updatedFeedback: FeedbackData) => {
     const payload = {
-      id: updatedUsuario._id,
-      nome: updatedUsuario.nome,
-      email: updatedUsuario.email,
-      telefone: updatedUsuario.telefone,
-      mensagem: updatedUsuario.mensagem,
-      nota: updatedUsuario.nota,
-      mostrar_tela: updatedUsuario.mostrar_tela,
+      id: updatedFeedback._id,
+      nome: updatedFeedback.nome,
+      email: updatedFeedback.email,
+      telefone: updatedFeedback.telefone,
+      mensagem: updatedFeedback.mensagem,
+      nota: updatedFeedback.nota,
+      mostrar_tela: updatedFeedback.mostrar_tela,
     };
 
     try {
@@ -52,7 +52,7 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
         const errorResponse = await response.json();
         throw new Error(errorResponse.error || 'Erro desconhecido ao atualizar feedback');
       }
-      setUsuarioEditando(null);
+      setFeedbackEditando(null);
       onRefresh();
     } catch (error) {
       console.error('Erro ao salvar feedback:', error);
@@ -60,19 +60,19 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
   };
 
   const handleConfirmDelete = async () => {
-    if (usuarioExcluindo) {
+    if (feedbackExcluindo) {
       try {
         const response = await fetch('https://olivercleaningservice.com/api/excluirFeedback', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ id: usuarioExcluindo._id }),
+          body: JSON.stringify({ id: feedbackExcluindo._id }),
         });
         if (!response.ok) {
           throw new Error('Erro ao excluir feedback');
         }
-        setUsuarioExcluindo(null);
+        setFeedbackExcluindo(null);
         onRefresh();
       } catch (error) {
         console.error('Erro ao excluir feedback:', error);
@@ -113,17 +113,17 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
         </tbody>
       </table>
 
-      {usuarioEditando && (
+      {feedbackEditando && (
         <EditarFeedbackModal
-          usuario={usuarioEditando}
-          onClose={() => setUsuarioEditando(null)}
+        feedback={feedbackEditando}
+          onClose={() => setFeedbackEditando(null)}
           onSave={handleSave}
         />
       )}
-      {usuarioExcluindo && (
+      {feedbackExcluindo && (
         <ConfirmarExclusaoModal
           onConfirm={handleConfirmDelete}
-          onCancel={() => setUsuarioExcluindo(null)}
+          onCancel={() => setFeedbackExcluindo(null)}
         />
       )}
     </>

@@ -15,7 +15,7 @@ const AdicionarUsuario: React.FC<AdicionarUsuarioProps> = ({ onClose }) => {
 
     console.log('Dados que será enviado: ' + nome + email + telefone + senha )
 
-    const response = await fetch('http://localhost:3000/api/criarUsuario', {
+    const response = await fetch('https://olivercleaningservice.com/api/criarUsuario', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

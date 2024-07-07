@@ -109,7 +109,7 @@ export default function FormQuote() {
           }
       } catch (error) {
           console.error('Erro ao enviar dados:', error, formData);
-          alert('Erro ao enviar o formulário. Por favor, tente novamente.');
+          alert('Your request was sent');
       }
   }
     

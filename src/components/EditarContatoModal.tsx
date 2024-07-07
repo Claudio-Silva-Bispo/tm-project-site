@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-interface UserData {
+interface ContatoData {
   _id: string;  // Ajuste aqui para usar _id
   nome: string;
   email: string;
@@ -11,13 +11,13 @@ interface UserData {
 }
 
 interface EditarContatoModalProps {
-  usuario: UserData | null;
+  contato: ContatoData | null;
   onClose: () => void;
-  onSave: (data: UserData) => void;
+  onSave: (data: ContatoData) => void;
 }
 
-const EditarContatoModal: React.FC<EditarContatoModalProps> = ({ usuario, onClose, onSave }) => {
-  const [formData, setFormData] = useState<UserData>({
+const EditarContatoModal: React.FC<EditarContatoModalProps> = ({ contato, onClose, onSave }) => {
+  const [formData, setFormData] = useState<ContatoData>({
     _id: '',  // Ajuste aqui para usar _id
     nome: '',
     email: '',
@@ -26,10 +26,10 @@ const EditarContatoModal: React.FC<EditarContatoModalProps> = ({ usuario, onClos
   });
 
   useEffect(() => {
-    if (usuario) {
-      setFormData(usuario);  // Diretamente usando o objeto usuario
+    if (contato) {
+      setFormData(contato);  // Diretamente usando o objeto usuario
     }
-  }, [usuario]);
+  }, [contato]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -41,7 +41,7 @@ const EditarContatoModal: React.FC<EditarContatoModalProps> = ({ usuario, onClos
     await onSave(formData);  // Enviando formData que inclui _id
   };
 
-  if (!usuario) {
+  if (!contato) {
     return null;
   }
 

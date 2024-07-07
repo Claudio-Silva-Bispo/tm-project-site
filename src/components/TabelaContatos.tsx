@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EditarContatoModal from './EditarContatoModal';
 import ConfirmarExclusaoModal from './ConfirmarExclusaoModal';
 
-interface UserData {
+interface ContatoData {
   _id: string;
   nome: string;
   email: string;
@@ -11,29 +11,29 @@ interface UserData {
 }
 
 interface TabelaContatosProps {
-  data: UserData[];
+  data: ContatoData[];
   onRefresh: () => void;
 }
 
 const TabelaContatos: React.FC<TabelaContatosProps> = ({ data, onRefresh }) => {
-  const [usuarioEditando, setUsuarioEditando] = useState<UserData | null>(null);
-  const [usuarioExcluindo, setUsuarioExcluindo] = useState<UserData | null>(null);
+  const [contatoEditando, setContatoEditando] = useState<ContatoData | null>(null);
+  const [contatoExcluindo, setContatoExcluindo] = useState<ContatoData | null>(null);
 
-  const handleEditClick = (usuario: UserData) => {
-    setUsuarioEditando(usuario);
+  const handleEditClick = (contato: ContatoData) => {
+    setContatoEditando(contato);
   };
 
-  const handleDeleteClick = (usuario: UserData) => {
-    setUsuarioExcluindo(usuario);
+  const handleDeleteClick = (contato: ContatoData) => {
+    setContatoExcluindo(contato);
   };
 
-  const handleSave = async (updatedUsuario: UserData) => {
+  const handleSave = async (updatedContato: ContatoData) => {
     const payload = {
-      id: updatedUsuario._id,
-      nome: updatedUsuario.nome,
-      email: updatedUsuario.email,
-      telefone: updatedUsuario.telefone,
-      mensagem: updatedUsuario.mensagem
+      id: updatedContato._id,
+      nome: updatedContato.nome,
+      email: updatedContato.email,
+      telefone: updatedContato.telefone,
+      mensagem: updatedContato.mensagem
     };
 
     try {
@@ -48,7 +48,7 @@ const TabelaContatos: React.FC<TabelaContatosProps> = ({ data, onRefresh }) => {
         const errorResponse = await response.json();
         throw new Error(errorResponse.error || 'Erro desconhecido ao atualizar contato');
       }
-      setUsuarioEditando(null);
+      setContatoEditando(null);
       onRefresh();
     } catch (error) {
       console.error('Erro ao salvar contato:', error);
@@ -56,19 +56,19 @@ const TabelaContatos: React.FC<TabelaContatosProps> = ({ data, onRefresh }) => {
   };
 
   const handleConfirmDelete = async () => {
-    if (usuarioExcluindo) {
+    if (contatoExcluindo) {
       try {
         const response = await fetch('https://olivercleaningservice.com/api/excluirContato', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ id: usuarioExcluindo._id }),
+          body: JSON.stringify({ id: contatoExcluindo._id }),
         });
         if (!response.ok) {
           throw new Error('Erro ao excluir contato');
         }
-        setUsuarioExcluindo(null);
+        setContatoExcluindo(null);
         onRefresh();
       } catch (error) {
         console.error('Erro ao excluir contato:', error);
@@ -103,17 +103,17 @@ const TabelaContatos: React.FC<TabelaContatosProps> = ({ data, onRefresh }) => {
           ))}
         </tbody>
       </table>
-      {usuarioEditando && (
+      {contatoEditando && (
         <EditarContatoModal
-          usuario={usuarioEditando}
-          onClose={() => setUsuarioEditando(null)}
+          contato={contatoEditando}
+          onClose={() => setContatoEditando(null)}
           onSave={handleSave}
         />
       )}
-      {usuarioExcluindo && (
+      {contatoExcluindo && (
         <ConfirmarExclusaoModal
           onConfirm={handleConfirmDelete}
-          onCancel={() => setUsuarioExcluindo(null)}
+          onCancel={() => setContatoExcluindo(null)}
         />
       )}
     </>
