@@ -5,9 +5,9 @@ import { ObjectId } from 'mongodb';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'PUT') {
-        const { id, nome, email, telefone, mensagem, nota, mostrar_tela } = req.body;
+        const { id, nome, email, mensagem, nota, mostrar_tela } = req.body;
 
-        if (!id || !nome || !email || !telefone || !mensagem || !nota || mostrar_tela === undefined) {
+        if (!id || !nome || !email || !mensagem || !nota || mostrar_tela === undefined) {
             return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
         }
 
@@ -15,7 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             const { db } = await connectToDatabase();
             const result = await db.collection('t_feedback').updateOne(
                 { _id: new ObjectId(id) },
-                { $set: { nome, email, telefone, mensagem, nota, mostrar_tela } }
+                { $set: { nome, email, mensagem, nota, mostrar_tela } }
             );
             if (result.matchedCount === 0) {
                 return res.status(404).json({ error: 'Feedback não encontrado' });
