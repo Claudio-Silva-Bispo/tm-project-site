@@ -6,7 +6,6 @@ interface FeedbackData {
   _id: string;
   nome: string;
   email: string;
-  telefone: string;
   mensagem: string;
   nota: string;
   mostrar_tela: string;
@@ -34,14 +33,13 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
       id: updatedFeedback._id,
       nome: updatedFeedback.nome,
       email: updatedFeedback.email,
-      telefone: updatedFeedback.telefone,
       mensagem: updatedFeedback.mensagem,
       nota: updatedFeedback.nota,
       mostrar_tela: updatedFeedback.mostrar_tela,
     };
 
     try {
-      const response = await fetch('https://olivercleaningservice.com/api/atualizarFeedback', {
+      const response = await fetch('http://localhost:3000/api/atualizarFeedback', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -62,7 +60,7 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
   const handleConfirmDelete = async () => {
     if (feedbackExcluindo) {
       try {
-        const response = await fetch('https://olivercleaningservice.com/api/excluirFeedback', {
+        const response = await fetch('http://localhost:3000/api/excluirFeedback', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
@@ -87,7 +85,6 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
           <tr className="dark:bg-gray-300">
             <th className="p-3">Nome</th>
             <th className="p-3">E-mail</th>
-            <th className="p-3">Telefone</th>
             <th className="p-3">Mensagem</th>
             <th className="p-3">Nota</th>
             <th className="p-3">Mostrar no site</th>
@@ -100,7 +97,6 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
             <tr key={item._id}>
               <td className="px-3 py-2">{item.nome}</td>
               <td className="px-3 py-2">{item.email}</td>
-              <td className="px-3 py-2">{item.telefone}</td>
               <td className="px-3 py-2">{item.mensagem}</td>
               <td className="px-3 py-2">{item.nota}</td>
               <td className="px-3 py-2">{item.mostrar_tela}</td>

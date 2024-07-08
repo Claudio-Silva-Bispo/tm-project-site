@@ -110,6 +110,58 @@ body {
     margin: 0 auto;
 }
 
+/* HomePage */
+
+
+/* No mesmo arquivo CSS após a definição da animação */
+.animate-color-change {
+  animation: colorChange 3s infinite; 
+}
+
+@keyframes colorChange {
+0%, 100% {
+  color: black;
+}
+50% {
+  color: #EB9AC0;
+}
+}
+
+/* Carrosel de serviços */
+
+.container-carrosel {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FDEAF2;
+  align-items: center;
+}
+
+.conteiner-imagem-opcoes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Formulário de Orçamento */
+
+
+
+.container-form {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-quote {
+  width: 80%;
+}
+
+
 
 /* Ajuste para o formulário de Feedback */
 .rating:not(:checked) > input {

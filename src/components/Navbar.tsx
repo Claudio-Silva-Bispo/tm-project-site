@@ -38,25 +38,24 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <div className="container flex justify-between h-16 mx-auto p-4">
-        <img src="/assets/Navbar/logo-empresa-tratado.png" alt="Logo da empresa"/>
+        <img src="/assets/Navbar/logo-oficial.png" alt="Logo da empresa"/>
 
         <ul className="items-stretch hidden space-x-3 md:flex font-manrope">
           {[
             { label: 'Home', hash: '/' },
-            { label: 'About', hash: '#About' },
-            { label: 'Services', hash: '#Services' },
-            { label: 'Contact', hash: '#Contact' },
-            { label: 'Quote', hash: '#Quote' },
-            { label: 'Feedback', hash: '#FormFeedback' },
-            { label: 'Testimonials', hash: '#Testimonials' },
-            { label: 'Teams', hash: '/Teams' },
+            { label: 'About', hash: '#about' },
+            { label: 'Services', hash: '#service-offered' },
+            { label: 'Contact', hash: '#contact' },
+            { label: 'Quote', hash: '#form-quote' },
+            { label: 'Feedback', hash: '#form-feedback' },
+            { label: 'Testimonials', hash: '#testimonials' },
             { label: 'Dashboard', hash: '/LoginDashboard' }
           ].map((item) => (
             <li key={item.hash} className="flex">
               <Link href={item.hash} legacyBehavior>
                 <a
                   className={`flex items-center px-4 -mb-1 border-b-2 ${
-                    activeHash === item.hash ? 'border-[#2484e4] text-[#2484e4]' : 'dark:border-transparent'
+                    activeHash === item.hash ? 'border-[#F3AACB] text-[#F3AACB]' : 'dark:border-transparent'
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
@@ -83,14 +82,14 @@ export default function Navbar() {
             <div className="flex-1">
               <ul className="pt-2 pb-4 space-y-1 text-sm">
                 {[
-                  { label: 'Home', hash: '#' },
-                  { label: 'Services', hash: '#Services' },
-                  { label: 'Contact', hash: '#Contact' },
-                  { label: 'Quote', hash: '#Quote' },
-                  { label: 'Feedback', hash: '#FormFeedback' },
+                  { label: 'Home', hash: '/' },
+                  { label: 'About', hash: '#about' },
+                  { label: 'Services', hash: '#service-offered' },
+                  { label: 'Contact', hash: '#contact' },
+                  { label: 'Quote', hash: '#form-quote' },
+                  { label: 'Feedback', hash: '#form-feedback' },
                   { label: 'Social Media', hash: '#SocialMedia' },
-                  { label: 'Testimonials', hash: '#Testimonials' },
-                  { label: 'Teams', hash: '/Teams' },
+                  { label: 'Testimonials', hash: '#testimonials' },
                   { label: 'Dashboard', hash: '/LoginDashboard' }
                 ].map((item) => (
                   <li key={item.hash} className="rounded-sm">

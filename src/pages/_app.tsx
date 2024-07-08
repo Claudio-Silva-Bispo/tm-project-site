@@ -13,7 +13,7 @@ import WhatsAppWidget from '../components/WhatsAppWidget';
 
 
 export const metadata = {
-  title: 'Oliver Business Cleaning Service'
+  title: 'TM Service Cleaning'
 };
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -1,138 +1,80 @@
 
 
-export default function Services(){
-    return(
+const callouts = [
+    {
+      name: 'Regular Cleaning',
+      description: 'Customized to your familys needs, our regular cleaning service keeps your home consistently fresh and welcoming.',
+      imageSrc: '/assets/Services/regular.png',
+      imageAlt: 'Imagem de um serviço regular',
+      href: '#',
+    },
+    {
+      name: 'Deep Cleaning',
+      description: 'Our comprehensive approach to deep cleaning goes beyond commonly touched surfaces and includes less frequently used areas and hard-to-reach spots.',
+      imageSrc: '/assets/Services/Deep.png',
+      imageAlt: 'Imagem dos serviços de limpesa profunda',
+      href: '#',
+    },
+    {
+      name: 'Move-In & Move-Out',
+      description: 'Make your move easier with TM Cleaning. We provide thorough cleaning for homes, apartments, and condominiums during move-in and move-out transitions.',
+      imageSrc: '/assets/Services/Mov.png',
+      imageAlt: 'Imagem dos serviços de mudanças',
+      href: '#',
+    },
+    {
+      name: 'Commercial',
+      description: 'Ideal for property owners and hosts. Put your cleaning needs on autopilot with TM Cleaning.',
+      imageSrc: '/assets/Services/empresa.png',
+      imageAlt: 'Imagem dos serviços comerciais',
+      href: '#',
+    },
+    {
+      name: 'Vacation Home',
+      description: 'Recognizing cleaning as a top priority for travelers, we utilize a 4-step vacation rental cleaning checklist to ensure thorough cleaning, preparing your vacation rental for new guests.',
+      imageSrc: '/assets/Services/vacation.png',
+      href: '#',
+    },
+    {
+      name: 'Event',
+      description: 'Organizing an event is exhausting enough - let us take care of the cleaning. We ll ensure your space is spotless for your next party or event.',
+      imageSrc: '/assets/Services/evento.png',
+      href: '#',
+    },
+  ]
+  
+  export default function Services() {
+    return (
+      <div className="bg-gray-100 min-h-full" id="about-services">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32 px-4">
+            <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Our Services</h2>
 
-        <section className="p-4 lg:p-8" id="Services">
-
-            <div className="container mx-auto space-y-12 mt-20">
-
-                <div className="font-bold text-6xl uppercase">
-                    <h1>About Our Services</h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600">Learn about some of the services we provide, and remember that we can customize each activity and the details according to your needs.</p>
+  
+            <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+              {callouts.map((callout) => (
+                <div key={callout.name} className="group relative">
+                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 mt-10">
+                    <img
+                      src={callout.imageSrc}
+                      alt={callout.imageAlt}
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <h3 className="mt-6 text-sm text-gray-500 pb-2">
+                    <a href={callout.href}>
+                      <span className="absolute inset-0" />
+                      {callout.name}
+                    </a>
+                  </h3>
+                  <p className="text-base font-semibold text-gray-900">{callout.description}</p>
                 </div>
-
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    
-                    <img src="/assets/Services/Imagem1.jpg" alt="Imagem sobre nossos serviços" className="h-80 dark:bg-gray-500 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6">
-                        
-                        <span className="text-xs uppercase">Regular Cleaning</span>
-                        
-                        <h3 className="text-3xl font-bold">Transform your space with our regular cleaning: a cleaner and healthier environment, every day!</h3>
-                        
-                        <p className="my-6">Regular cleaning is essential for maintaining a clean and healthy environment. By cleaning regularly, we remove dirt, dust, and germs that can accumulate over time.</p>
-
-                        <button type="button" className="self-start">Get a quote now!</button>
-
-                    </div>
-
-                </div>
-
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                    
-                    <img src="/assets/Services/Imagem2.jpg" alt="Imagem sobre nossos serviços" className="h-80 dark:bg-gray-500 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6">
-                        
-                        <span className="text-xs uppercase">Deep Cleaning</span>
-                        
-                        <h3 className="text-3xl font-bold">Make every corner spotless with our deep cleaning: perfection in every detail!</h3>
-                        
-                        <p className="my-6 dark:text-gray-600">Deep cleaning is an important task to keep things organized and tidy. It means giving everything a thorough scrub to make sure it’s super clean.</p>
-                        
-                        <button type="button" className="self-start">Get a quote now!</button>
-
-                    </div>
-                </div>
-
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    
-                    <img src="/assets/Services/Imagem8.jpg" alt="Imagem sobre nossos serviços" className="h-80 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6">
-                        
-                        <span className="text-xs uppercase">Move-In / Move-Out cleaning</span>
-                        
-                        <h3 className="text-3xl font-bold">Make your move smoother with Oliver  Cleaning. We provide thorough cleaning for homes, apartments, and condos during move-ins and move-outs.</h3>
-                        
-                        <p className="my-6">Move-out cleaning is an essential step when leaving a home. It involves thorough cleaning to ensure the place is spotless for the next occupants.</p>
-
-                        <button type="button" className="self-start">Get a quote now!</button>
-
-                    </div>
-                </div>
-
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                    
-                    <img src="/assets/Services/Imagem4.jpg" alt="Imagem sobre nossos serviços" className="h-80 dark:bg-gray-500 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6">
-                        
-                        <span className="text-xs uppercase">Post-Construction Cleaning</span>
-                        
-                        <h3 className="text-3xl font-bold">Unveil the beauty of your new space with our post-construction cleaning: the finishing touch for a flawless shine!</h3>
-                        
-                        <p className="my-6 dark:text-gray-600">After the construction work is done, it's time for the cleanup! Post-construction cleaning is essential to make the place shine. Dust, debris, and leftover materials need to be removed to reveal the beauty of the newly built or renovated space.</p>
-
-                        <button type="button" className="self-start">Get a quote now!</button>
-
-                    </div>
-                </div>
-
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    
-                    <img src="/assets/Services/Imagem5.jpg" alt="Imagem sobre nossos serviços" className="h-80 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6">
-                        
-                        <span className="text-xs uppercase">Special Event Cleaning</span>
-                        
-                        <h3 className="text-3xl font-bold">Leave the cleaning to us and enjoy your special event: shine and perfection from start to finish!</h3>
-                        
-                        <p className="my-6">Special events bring joy and excitement, but they also bring mess. That's where special event cleaning steps in. Whether it's a wedding, a party, or a corporate gathering, our team ensures everything sparkles and shines before, during, and after the occasion.</p>
-
-                        <button type="button" className="self-start">Get a quote now!</button>
-
-                    </div>
-                </div>
-
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                    
-                    <img src="/assets/Services/Imagem6.jpg" alt="Imagem sobre nossos serviços" className="h-80 dark:bg-gray-500 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6">
-                        
-                        <span className="text-xs uppercase">Vegan Home Solutions</span>
-                        
-                        <h3 className="text-3xl font-bold">Clean and shining shower with vegan solutions: kindness and efficiency for your home!</h3>
-                        
-                        <p className="my-6 dark:text-gray-600">Keeping your shower clean doesn't have to mean using harsh chemicals. Vegan home solutions offer gentle yet effective ways to keep your shower shining.</p>
-
-                        <button type="button" className="self-start">Get a quote now!</button>
-
-                    </div>
-                </div>
-
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    
-                    <img src="/assets/Services/Imagem7.png" alt="Imagem sobre nossos serviços" className="h-80 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6">
-                        
-                        <span className="text-xs uppercase">Residencial & Commercial</span>
-                        
-                        <h3 className="text-3xl font-bold">Let us handle the cleaning so you can focus on business: spotless spaces that impress your clients and boost productivity!</h3>
-                        
-                        <p className="my-6">A clean and well-maintained workspace is key to a professional image and a productive environment. Our commercial cleaning services ensure that your office, store, or facility is pristine and inviting. From daily maintenance to deep cleans, we tailor our services to meet your specific needs.</p>
-
-                        <button type="button" className="self-start">Get a quote now!</button>
-
-                    </div>
-                </div>
-
+              ))}
             </div>
-
-        </section>
-    );
-}
+          </div>
+        </div>
+      </div>
+    )
+  }
+  

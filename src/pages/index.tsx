@@ -1,32 +1,27 @@
 
 /* Importação dos Componentes */
 import HomePage from "../components/Home";
-import SocialMedia from "../components/SocialMedia";
 import About from "../components/About";
-import Contact from "../components/Contact"
-import AboutUs from "../components/AboutUs";
-import Services from "../components/Services";
-import Feedback from "../components/Testimonials";
-import DetailsFeedback from "../components/DetailsFeedback";
-import FormFeedback from "../components/FormFeedback";
-import Quote from "../components/Quote";
-import FormQuote from "../components/FormQuote";
+import AboutService from "@/components/AboutService";
+import Contact from "../components/Contact";
+import Services from "@/components/Services";
+import CarroselServices from "@/components/CarroselServices";
+import Quote from "@/components/Quote";
+import Feedback from "@/components/Feedback";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
     <div>
       <HomePage/>
       <About/>
-      <SocialMedia/>
-      <AboutUs/>
+      <AboutService/>
       <Contact/>
       <Services/>
-      <DetailsFeedback/>
-      <Feedback/>
-      <FormFeedback/>
+      <CarroselServices/>
       <Quote/>
-      <FormQuote/>
-
+      <Feedback/>
+      <Testimonials/>
     </div>
   );
 }

@@ -55,7 +55,7 @@ const TabelaContatos: React.FC<TabelaOrcamentosProps> = ({ data, onRefresh }) =>
     };
 
     try {
-      const response = await fetch('https://olivercleaningservice.com/api/atualizarOrcamento', {
+      const response = await fetch('http://localhost:3000/api/atualizarOrcamento', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ const TabelaContatos: React.FC<TabelaOrcamentosProps> = ({ data, onRefresh }) =>
   const handleConfirmDelete = async () => {
     if (orcamentoExcluindo) {
       try {
-        const response = await fetch('https://olivercleaningservice.com/api/excluirOrcamento', {
+        const response = await fetch('http://localhost:3000/api/excluirOrcamento', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',

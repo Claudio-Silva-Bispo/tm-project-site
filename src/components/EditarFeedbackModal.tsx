@@ -6,7 +6,6 @@ interface FeedbackData {
   _id: string;  // Ajuste aqui para usar _id
   nome: string;
   email: string;
-  telefone: string;
   mensagem: string;
   nota: string;
   mostrar_tela: string;
@@ -23,7 +22,6 @@ const EditarFeedbackModal: React.FC<EditarFeedbackModalProps> = ({ feedback, onC
     _id: '',  // Ajuste aqui para usar _id
     nome: '',
     email: '',
-    telefone: '',
     mensagem: '',
     nota: '',
     mostrar_tela: '',
@@ -76,17 +74,7 @@ const EditarFeedbackModal: React.FC<EditarFeedbackModalProps> = ({ feedback, onC
               onChange={handleChange}
             />
           </div>
-          <div>
-            <label htmlFor="telefone" className="block text-sm font-medium">Telefone</label>
-            <input
-              type="tel"
-              id="telefone"
-              name="telefone"
-              className="w-full p-2 border border-gray-300 rounded"
-              value={formData.telefone}
-              onChange={handleChange}
-            />
-          </div>
+
           <div>
             <label htmlFor="mensagem" className="block text-sm font-medium">Mensagem</label>
             <input

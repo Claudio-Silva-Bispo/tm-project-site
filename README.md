@@ -1,9 +1,9 @@
 
 # Introdução à Documentação do Projeto
 
-Bem-vindo à documentação dos componentes do projeto do Oliver Cleaning Service. Esta documentação foi criada para fornecer todas as informações necessárias para entender e implementar os componentes individuais do projeto.
+Bem-vindo à documentação dos componentes do projeto da TM Cleaning. Esta documentação foi criada para fornecer todas as informações necessárias para entender e implementar os componentes individuais do projeto.
 
-Cada componente documentado aqui é parte integrante de uma aplicação maior, que pode ser visualizada em funcionamento através do seguinte link: Oliver Cleaning Service https://olivercleaningservice.com/.
+Cada componente documentado aqui é parte integrante de uma aplicação maior, que pode ser visualizada em funcionamento através do seguinte link: https://tmservicescleaning.com/.
 
 Além disso, na pasta Figma, você encontrará um protótipo do projeto em imagens para facilitar a visualização e entender melhor a interface e interação planejadas.
 

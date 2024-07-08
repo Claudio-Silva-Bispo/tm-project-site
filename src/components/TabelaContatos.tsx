@@ -37,7 +37,7 @@ const TabelaContatos: React.FC<TabelaContatosProps> = ({ data, onRefresh }) => {
     };
 
     try {
-      const response = await fetch('https://olivercleaningservice.com/api/atualizarContato', {
+      const response = await fetch('http://localhost:3000/api/atualizarContato', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

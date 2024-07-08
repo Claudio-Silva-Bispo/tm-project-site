@@ -1,55 +1,97 @@
 
+/* Instalar FontAwesome
+npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 
-export default function Footer(){
+*/
+import React from 'react';
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import Image from 'next/image';
+
+
+export default function Footer() {
+
     return(
-
-        <footer className="bg-setima">
-           
-            <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row ">
+        
+        <footer className="bg-[#EB9AC0] font-sans">
+            
+            <div className="container px-6 py-12 mx-auto">
                 
-                <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                    <div className="sm:col-span-1">
+                        <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl">Follow our company on social media platforms.</h1>
+
+                        <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
                     
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    <li><a href="#FormQuote">Quote</a></li>
-                    <li><a href="#FormFeedback">Feedback</a></li>
-                    <li><a href="/Teams">Teams</a></li>
-                    <li><a href="/LoginDashboard">Dashboard</a></li>
-                    
-                </ul>
+                        <Image src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30" alt="instagram" className='mb-5'></Image>
 
-                <div className="flex flex-col justify-center pt-6 lg:pt-0">
-                    
-                    <div className="flex justify-center space-x-10">
-                       
-                        <a rel="noopener noreferrer" href="https://www.instagram.com/oliverbusinessofficial?igsh=MWZodDR0MzVrNWM2NA%3D%3D&utm_source=qr" target="_blank" title="Instagram" className="flex items-center justify-center w-12 h-12 rounded-full  bg-terceira text-gray-50 hover:bg-primeira">
-                            
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="w-4 h-4">
-                                <path d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z"></path>
-                            </svg>
-                        </a>
+                        </div>
 
-                        <a rel="noopener noreferrer" href="https://www.facebook.com/Oliveirahousecleaning?mibextid=LQQJ4d" target="_blank" title="Facebook" className="flex items-center justify-center w-12 h-12 rounded-full bg-terceira text-gray-50 hover:bg-primeira">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-4 h-4">
-                                <path d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z"></path>
-                            </svg>
-                        </a>
+                        <Link href="https://www.instagram.com/tm_housecleaning?igsh=MjgybWFhMWdnOTM%3D&utm_source=qr" className='text-sm text-white md:text-black'>Click here to visit our Instagram page.</Link>
 
-                        <a rel="noopener noreferrer" href="https://g.co/kgs/5WL22RM" target="_blank" title="Gmail" className="flex items-center justify-center w-12 h-12 rounded-full bg-terceira text-gray-50 hover:bg-primeira">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-4 h-4">
-                                <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
-                            </svg>
-                        </a>
-
+                        
                     </div>
+
+                    <div>
+                        <p className="font-semibold text-gray-800">Company</p>
+
+                        <div className="flex flex-col items-start mt-5 space-y-2">
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/About">About</Link></p>
+
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/FormQuote">Request your Quote</Link></p>
+
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/Services">Services</Link></p>
+
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/About">Business hours</Link></p>
+
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/FormFeedback">Feedback</Link></p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p className="font-semibold text-gray-800">Services</p>
+
+                        <div className="flex flex-col items-start mt-5 space-y-2">
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Regular Cleaning</p>
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Deep Cleaning</p>
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Move-in & Move-Out</p>
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Commercial</p>
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Vacation Home</p>
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Event</p>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <p className="font-semibold text-gray-800">Contact</p>
+
+                        <div className="flex flex-col items-start mt-5 space-y-2">
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Phone number:+1 (425) 380-1808</p>
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
+                                
+                            <a className="rede_social sms" href="sms:+4253801808"/>Message: +1 (425) 380-1808</p>
+                            
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Mail: Tm.housecleaning24@gmail.com</p>
+                            
+                        </div>
+                    </div>
+
                 </div>
+                
+                <hr className="my-6 border-gray-200 md:my-8 h-2" />
+                
+                <p className="font-title text-center md:text-lg md:p-4 ">&copy; 2024 TM Cleaning. All rights reserved.</p>
             </div>
-
-
-            <div className="py-6 text-sm text-center dark:text-gray-600">© 2024 Company Oliver. All rights reserved.</div>
-
         </footer>
 
     );

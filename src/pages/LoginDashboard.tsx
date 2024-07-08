@@ -14,7 +14,7 @@ export default function LoginDashboard() {
     setError('');
 
     try {
-      const response = await fetch('https://olivercleaningservice.com/api/login', {
+      const response = await fetch('http://localhost:3000/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ export default function LoginDashboard() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-[#2484e4] sm:text-sm"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-[#F3AACB] sm:text-sm"
               />
             </div>
           </div>
@@ -76,17 +76,17 @@ export default function LoginDashboard() {
                 required
                 value={senha}
                 onChange={(e) => setSenha(e.target.value)}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-[#2484e4] sm:text-sm"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-[#F3AACB] sm:text-sm"
               />
             </div>
           </div>
 
-          {error && <p className="text-[#2484e4]">{error}</p>}
+          {error && <p className="text-[#F3AACB]">{error}</p>}
 
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-[#2484e4] px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus:outline focus:outline-2 focus:outline-red-600"
+              className="flex w-full justify-center rounded-md bg-[#F3AACB] px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus:outline focus:outline-2 focus:outline-red-600"
               disabled={loading}
             >
               {loading ? 'Acessando...' : 'Acesse'}
@@ -96,7 +96,7 @@ export default function LoginDashboard() {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           Cadastro somente
-          <span className="block font-semibold text-[#2484e4]">com o administrador do sistema</span>
+          <span className="block font-semibold text-[#F3AACB]">com o administrador do sistema</span>
         </p>
       </div>
     </div>
