@@ -55,7 +55,7 @@ const TabelaContatos: React.FC<TabelaOrcamentosProps> = ({ data, onRefresh }) =>
     };
 
     try {
-      const response = await fetch('http://localhost:3000/api/atualizarOrcamento', {
+      const response = await fetch('https://tmservicescleaning.com/api/atualizarOrcamento', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

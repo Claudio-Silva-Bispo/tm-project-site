@@ -29,7 +29,7 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data, onRefresh }) => {
 
   const handleSave = async (updatedUsuario: UserData) => {
     try {
-      const response = await fetch('https://olivercleaningservice.com/api/atualizarUsuario', {
+      const response = await fetch('https://tmservicescleaning.com/api/atualizarUsuario', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

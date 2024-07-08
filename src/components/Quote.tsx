@@ -89,7 +89,7 @@ export default function FormQuote() {
             console.log('Enviando o formulário com os dados:', formData);
 
             try {
-                const response = await fetch('http://localhost:3000/api/criarOrcamento', {
+                const response = await fetch('https://tmservicescleaning.com/api/criarOrcamento', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

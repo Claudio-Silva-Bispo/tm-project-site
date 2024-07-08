@@ -60,7 +60,7 @@ const TabelaFeedbacks: React.FC<TabelaFeedbacksProps> = ({ data, onRefresh }) =>
   const handleConfirmDelete = async () => {
     if (feedbackExcluindo) {
       try {
-        const response = await fetch('http://localhost:3000/api/excluirFeedback', {
+        const response = await fetch('https://tmservicescleaning.com/api/excluirFeedback', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
