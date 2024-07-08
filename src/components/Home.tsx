@@ -25,7 +25,7 @@ export default function HomePage() {
                 
                     <div className="">
 
-                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl uppercase text-left md:text-center animate-color-change text-4xl font-bold">
+                        <h1 className="tracking-tight text-gray-900 sm:text-6xl uppercase text-left md:text-center animate-color-change text-4xl font-bold">
                         TM Service Cleaning
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600 md:text-center w-[80%] md:w-full ">
