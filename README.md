@@ -15,6 +15,11 @@ Esperamos que esta documentação torne o processo de integração e utilizaçã
 
 ### Front-End ###
 
+# Suporte para formulários
+Instalar: npm install @netlify/plugin-nextjs@latest
+Instalar: npm install sharp
+
+
 # Navbar
 
 ## Descrição:
