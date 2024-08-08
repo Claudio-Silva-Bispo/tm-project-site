@@ -97,7 +97,7 @@ export default function Contact(){
                 id='formulario-contato'
                 name='formulario-contato'
                 onSubmit={handleSubmit}
-                data-netlify="true">
+                >
                     
                     <label className="block">
                         
