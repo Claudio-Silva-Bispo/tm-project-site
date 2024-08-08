@@ -36,7 +36,7 @@ export default function HomePage() {
                         <a
                             href="/FormQuote"
                             className="rounded-md bg-[#EB9AC0] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#B3CEE5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-[70%] sm:w-[40%]"
-                        >Request your quote
+                        >Request your quote Free
                             
                         </a>
                         <a href="/Services" className="text-sm font-semibold leading-6 text-gray-900 text-left ">Learn more about our services
