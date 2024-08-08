@@ -84,7 +84,8 @@ export default function CarroselServices() {
     <div className="bg-[#F5EAE8] relative mx-auto w-full min-h-screen flex flex-col items-center text-white" id='carrosel-service'>
       
 
-      <h1 className='md:hidden font-montserrat font-extrabold text-6xl pt-[130px] p-10 text-[#F1A027] leading-[90%]'>conheça um pouco <br /> sobre nossa <br /> missão</h1>
+      <h1 className='md:hidden font-montserrat font-extrabold text-6xl pt-[130px] p-10 text-[#F3AACB] leading-[90%]'>learn a little <br /> about our <br /> mission</h1>
+
 
       <div className="flex flex-col md:flex-row items-center justify-center w-full mt-20  md:pt-0 space-y-10 md:space-y-0 md:space-x-10 relative">
         
@@ -139,11 +140,11 @@ export default function CarroselServices() {
         
         <div className="flex justify-center mt-4 md:hidden">
           
-          <button onClick={handlePrev} className="bg-[#20A19A] p-2 rounded-full mx-2">
+          <button onClick={handlePrev} className="bg-[#F3AACB] p-2 rounded-full mx-2">
             <Image src={imagem5.src} alt="arrow back" width={40} height={40} />
           </button>
 
-          <button onClick={handleNext} className="bg-[#20A19A] p-2 rounded-full mx-2">
+          <button onClick={handleNext} className="bg-[#F3AACB] p-2 rounded-full mx-2">
             <Image src={imagem4.src} alt="arrow forward" width={40} height={40} />
           </button>
 

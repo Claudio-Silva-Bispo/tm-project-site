@@ -45,7 +45,8 @@ export default function LoginDashboard() {
             src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
             alt="Your Company"
           />
-          <h2 className="mt-6 text-2xl font-bold text-gray-900">Acesso ao Painel de Solicitações</h2>
+          <h2 className="mt-6 text-2xl font-bold text-gray-900">Access to the Requests Panel</h2>
+
         </div>
 
         <form className="space-y-6" onSubmit={handleSubmit}>
@@ -66,7 +67,7 @@ export default function LoginDashboard() {
           </div>
 
           <div>
-            <label htmlFor="senha" className="block text-sm font-medium text-gray-700">Senha</label>
+            <label htmlFor="senha" className="block text-sm font-medium text-gray-700">Password</label>
             <div className="mt-2">
               <input
                 id="senha"
@@ -95,9 +96,10 @@ export default function LoginDashboard() {
         </form>
 
         <p className="mt-10 text-center text-sm text-gray-500">
-          Cadastro somente
-          <span className="block font-semibold text-[#F3AACB]">com o administrador do sistema</span>
+          Registration only
+          <span className="block font-semibold text-[#F3AACB]">with the system administrator</span>
         </p>
+
       </div>
     </div>
   );
