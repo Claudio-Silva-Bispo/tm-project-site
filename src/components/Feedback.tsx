@@ -102,6 +102,7 @@ export default function Feedback() {
                     name="formulario-feedback"
                     method="post"
                     data-netlify="true"
+                    hidden
                     onSubmit={handleSubmit}
                 >
                     <div className="">

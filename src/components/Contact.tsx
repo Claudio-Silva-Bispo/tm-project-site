@@ -96,7 +96,8 @@ export default function Contact(){
                 className="flex flex-col py-6 space-y-6 md:py-5 md:px-6"
                 id='formulario-contato'
                 name='formulario-contato'
-                onSubmit={handleSubmit}>
+                onSubmit={handleSubmit}
+                data-netlify="true" hidden>
                     
                     <label className="block">
                         

@@ -138,6 +138,7 @@ export default function FormQuote() {
             id='form-quote'
             method='post' 
             data-netlify="true" 
+            hidden
             onSubmit={handleSubmit} 
             className='bg-[#F3AACB] grid md:flex px-10 justify-center items-center min-h-[840px]'
         >
