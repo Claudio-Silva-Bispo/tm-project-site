@@ -1,0 +1,30 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[context.production]
+  command = "npm run build"
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
+
+[context.deploy-preview.environment]
+  NODE_ENV = "development"
+
+[context.branch-deploy.environment]
+  NODE_ENV = "development"
+
+[build.environment]
+  EMAIL_DESTINATARIO = "claudio_cssp@hotmail.com"
+  EMAIL_PASSWORD = "lklk pbzk nvkq dhnt"
+  EMAIL_USER = "cssp.claudio@gmail.com"
+  JWT_SECRET = "9jNNYNg99NpDZG8kcuONiUNbufV9qEKXoT/io7WtIkE"
+  MONGODB_DB = "ProjetoTMCleaning"
+  MONGODB_URI = "mongodb+srv://csspclaudio:clnzEcsY8xmMVXMr@cluster0.kfgkjua.mongodb.net/"
+

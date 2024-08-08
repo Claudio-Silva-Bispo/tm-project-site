@@ -49,7 +49,7 @@ export default function LoginDashboard() {
 
         </div>
 
-        <form className="space-y-6" onSubmit={handleSubmit} name='formulario-login' data-netlify="true" hidden>
+        <form className="space-y-6" onSubmit={handleSubmit} name='formulario-login' data-netlify="true">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
             <div className="mt-2">
