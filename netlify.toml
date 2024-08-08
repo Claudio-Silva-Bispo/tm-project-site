@@ -4,6 +4,7 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+  inputs = { disableFormsHandling = true }
 
 [context.production]
   command = "npm run build"
