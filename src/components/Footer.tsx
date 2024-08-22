@@ -4,8 +4,6 @@ npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg
 
 */
 import React from 'react';
-import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -38,15 +36,15 @@ export default function Footer() {
 
                         <div className="flex flex-col items-start mt-5 space-y-2">
                             
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/About">About</Link></p>
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/#about">About</Link></p>
 
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/FormQuote">Request your Quote</Link></p>
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/#form-quote">Request your Quote</Link></p>
 
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/Services">Services</Link></p>
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="#about-services">Services</Link></p>
 
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/About">Business hours</Link></p>
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/#about">Business hours</Link></p>
 
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/FormFeedback">Feedback</Link></p>
+                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"><Link href="/#form-feedback">Feedback</Link></p>
                         </div>
                     </div>
 
@@ -55,17 +53,17 @@ export default function Footer() {
 
                         <div className="flex flex-col items-start mt-5 space-y-2">
                             
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Regular Cleaning</p>
+                            <p className="text-gray-600 transition-colors duration-300 ">Regular Cleaning</p>
                             
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Deep Cleaning</p>
+                            <p className="text-gray-600 transition-colors duration-300 ">Deep Cleaning</p>
                             
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Move-in & Move-Out</p>
+                            <p className="text-gray-600 transition-colors duration-300 ">Move-in & Move-Out</p>
                             
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Commercial</p>
+                            <p className="text-gray-600 transition-colors duration-300 ">Commercial</p>
                             
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Vacation Home</p>
+                            <p className="text-gray-600 transition-colors duration-300 ">Vacation Home</p>
                             
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Event</p>
+                            <p className="text-gray-600 transition-colors duration-300 ">Event</p>
 
                         </div>
                     </div>
@@ -81,7 +79,8 @@ export default function Footer() {
                                 
                             <a className="rede_social sms" href="sms:+4253801808"/>Message: +1 (425) 380-1808</p>
                             
-                            <p className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">Mail: Tm.housecleaning24@gmail.com</p>
+                            <a className="text-gray-600 transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500"
+                            href='mailto:tm.housecleaning24@gmail.com'>Mail: Tm.housecleaning24@gmail.com</a>
                             
                         </div>
                     </div>

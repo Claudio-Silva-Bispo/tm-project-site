@@ -16,6 +16,7 @@ import { faClock } from '@fortawesome/free-solid-svg-icons'
 import { faCalendarWeek } from '@fortawesome/free-solid-svg-icons'
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import { faCalendar } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link';
 
 
 export default function AboutService() {
@@ -53,7 +54,7 @@ export default function AboutService() {
 
                 </div>
 
-                <a href="/CarroselServices" className="font-semibold text-indigo-600 mt-6">
+                <a href="/#carrosel-service" className="font-semibold text-indigo-600 mt-6">
                   <span className="absolute inset-0" aria-hidden="true" />
                   Discover the before and after of our services<span aria-hidden="true">&rarr;</span>
                 </a>
@@ -111,6 +112,7 @@ export default function AboutService() {
                             />
                           </div>
                         </div>
+
                         <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                           <div className="h-64 w-44 overflow-hidden rounded-lg">
                             <img
@@ -127,16 +129,17 @@ export default function AboutService() {
                             />
                           </div>
                         </div>
+                        
                       </div>
                     </div>
                   </div>
     
-                  <a
-                    href="#"
+                  <Link
+                    href="./#form-quote"
                     className="inline-block rounded-md border border-transparent bg-[#F3AACB] px-8 py-3 text-center font-medium text-white hover:bg-[#B3CEE5"
                   >
                     Free estimate
-                  </a>
+                  </Link>
                 </div>
               </div>
 

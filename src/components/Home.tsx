@@ -15,7 +15,7 @@ export default function HomePage() {
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 ">
                         Conheça sobre nossa empresa.{' '}
-                        <a href="/About" className="font-semibold text-[#F3AACB]">
+                        <a href="/#about" className="font-semibold text-[#F3AACB]">
                         
                         <span className="absolute inset-0" aria-hidden="true" />
                         Read more <span aria-hidden="true">&rarr;</span>
@@ -34,12 +34,12 @@ export default function HomePage() {
                     
                     <div className="mt-10 grid gap-5 md:flex md:items-center md:justify-center md:gap-x-6 w-[100%] text-center">
                         <a
-                            href="/FormQuote"
+                            href="/#form-quote"
                             className="rounded-md bg-[#EB9AC0] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#B3CEE5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-[70%] sm:w-[40%]"
                         >Request your quote Free
                             
                         </a>
-                        <a href="/Services" className="text-sm font-semibold leading-6 text-gray-900 text-left ">Learn more about our services
+                        <a href="/#about-services" className="text-sm font-semibold leading-6 text-gray-900 text-left ">Learn more about our services
                         <span aria-hidden="true">→</span>
                         </a>
                     </div>

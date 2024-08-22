@@ -67,7 +67,7 @@ export default function About() {
 
           <p className="mt-6 text-lg leading-8 text-gray-600">Schedule your visit with us now and feel the difference of a service designed for you. We are available to discuss how we can meet your needs.</p>
           
-          <Link className='rounded-md bg-[#F3AACB] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#B3CEE5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600' href="/FormQuote" >Request your Free Quote</Link>
+          <Link className='rounded-md bg-[#F3AACB] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#B3CEE5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600' href="/#form-quote" >Request your Free Quote</Link>
           
         </div>
 
